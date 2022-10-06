@@ -1,0 +1,309 @@
+:root {
+    /* VARIABLES VISTAS EN AFTER CLASS/*
+    /* Palette */
+    --first_color: #ffe6a7;
+    --second_color: #bb9457;
+    --third_color: #99582a;
+    --fourth_color: #432818;
+    
+    /* Font Sizes */
+    --text-xxl: 4.8em;
+    --text-xl: 3.6em;
+    --text-lg: 3.2em;
+    --text-md: 2.2em;
+    --text-sm: 1.6em;
+    --text-xs: 1.2em;
+    
+    /* Spacings */
+    --sp-xxl: 12rem;
+    --sp-xl: 8rem;
+    --sp-lg: 5rem;
+    --sp-md: 3.2rem;
+    --sp-sm: 1.6rem;
+    --sp-xs: 0.8rem;
+}
+
+/* CSS DEFAULT POR CADA PÁGINA */
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    font-family: 'Ms Madi', cursive;
+    font-weight: bold;
+    list-style-type: none;
+    user-select: none;
+}
+
+h1 {
+    color: var(--fourth_color);
+    -webkit-text-stroke: 0.05em var(--fourth_color);
+    font-size: 3.75em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--first_color);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo {
+    background-color: transparent;
+    height: 6.25rem;
+    width: 6.25rem;
+}
+
+nav {
+    background-color: var(--second_color);
+    position: sticky;
+    top:0;
+}
+
+.nav__menu {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.btn {
+    font-size: 2em;
+}
+
+a {
+    color: var(--fourth_color);
+    -webkit-text-stroke: 0.05em var(--fourth_color);
+    text-decoration: none;
+}
+
+footer {
+    color: var(--fourth_color);
+    -webkit-text-stroke: 0.05em var(--fourth_color);
+    width: 100%;
+    background-color: var(--first_color);
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.btn_social {
+    font-size: 3.125em;
+    padding: 0.625rem;
+}
+
+/* CSS HOME */
+
+.div__home {
+    display: flex;
+    pointer-events: none;
+    background-image: url(./img/home_background_image.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bienvenida {
+    background-color: var(--third_color);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--fourth_color);
+    border-radius: 25px;
+    padding: 20px;
+    -webkit-text-stroke: 2px white;
+}
+
+.bienvenida h2 {
+    font-size: 60px;
+}
+
+.divTextoReferridoAlVisitante {
+    border-top: 3px solid var(--fourth_color);
+    font-size: 48px;
+}
+
+
+
+/* CSS NOSOTROS*/
+
+.nosotrosMainContainer {
+    background-image: url(./img/nosotros_background_image.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.divSobreNosotros {
+    background-color: var(--third_color);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--fourth_color);
+    border-radius: 25px;
+    padding: 20px;
+    -webkit-text-stroke: 2px white;
+}
+
+.presentacion {
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    background-color: var(--third_color);
+    color: white;
+    text-align: center;
+}
+
+/* CSS LOCAL*/
+
+.localMainContainer {
+    background-image: url(./img/local_background_image.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    height: 100vh;
+}
+
+.localMainContainer p {
+    font-size: 1.8em;
+}
+
+iframe {
+    border-radius: 3em;
+}
+
+.informacionDelLocal {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--fourth_color);
+    border-radius: 3em;
+}
+
+/* CSS MENÚ*/
+
+.menuReducidoContainer {
+    background-image: url(./img/menu_background_image.jpg);
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+}
+
+.tituloPromoción {
+    color: #fcfffc;
+}
+
+.promocionesCafeteria {
+    padding: 20px;
+}
+
+.promocionCafeteria {
+    display: inline-block;
+    border: 3px solid black;
+    background-color: #fcfffc;
+    border-radius: 25px;
+}
+
+.btn_descarga {
+    font-size: 36px;
+    display: inline-block;
+    background-color: #6f1d1b;
+    color: var(--first_color);
+    border: 3px solid var(--first_color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+/* CSS CONTACTO*/
+
+.mainContactPageContainer {
+    background-image: url(./img/contacto_background_image.jpg);
+    background-size: cover;
+    display: grid;
+    justify-items: stretch;
+    align-items: center;
+    grid-template-areas: 
+        "headerContainer"
+        "header__nav"
+        "contactDataContainer"
+        "footer"    
+    ;
+}
+
+.contactDataContainer {
+    justify-self: center;
+    align-self: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contactDataContainer label {
+    -webkit-text-stroke: 0.05em var(--first_color);
+    display: block;
+    font-size: 3em;
+    padding-top: 1rem;
+    font-weight: bold;
+    user-select: none;
+}
+
+.contactDataContainer input {
+    font-size: 3em;
+    border: 0.05em solid var(--first_color);
+    border-radius: 1.5em;
+}
+
+.messageSection textarea {
+    font-size: 3em;
+    border: 0.05em solid var(--first_color);
+    border-radius: 0.5em;
+}
+
+@media screen and (max-width: 652px) {
+    .contactDataContainer label {
+        font-size: 1.8em;
+    }
+    
+    .contactDataContainer input {
+        font-size: 1.8em;
+    }
+    
+    .messageSection textarea {
+        font-size: 1.8em;
+    }
+}
