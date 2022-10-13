@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ristretto Café | Menú</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/RistrettoLogo.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
@@ -56,96 +57,209 @@
         </ul>
     </nav>
 
-    <div>
+    <div class="menuMainDiv">
         <div class="menuReducidoContainer">
             <div class="promocionesCafeteria">
-                <h2 class="tituloPromoción">Promociones de Cafetería</h2>
-                <article class="promocionCafeteria">
-                    <img src="../img/plato_default.png" alt="promo1">
-                    <h3 class="plato">Cafe o Te c/ Leche, 2 Medialunas + Exprimido de Naranja Chico</h3>
-                    <h3 class="precio">$380</h3>
-                </article>
+                <h2 class="tituloPromoción">Promociones de la Cafetería</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card promocion">
+                                <img src="../img/plato_default.png" class="card-img-top" alt="promo1">
+                                <div class="card-body">
+                                    <p class="card-text">Cafe o Te c/ Leche , Ensalada de Frutas, Yogurt, Cereales</p>
+                                    <p class="card-text">$1000</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card promocion">
+                                <img src="../img/plato_default.png" class="card-img-top" alt="promo1">
+                                <div class="card-body">
+                                    <p class="card-text">Cafe o Te c/ Leche , 2 Medialunas de Jamon y Queso, Jugo de Naranja Chico</p>
+                                    <p class="card-text">$800</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card promocion">
+                                <img src="../img/plato_default.png" class="card-img-top" alt="promo1">
+                                <div class="card-body">
+                                    <p class="card-text">Cafe o Te c/ Leche, Tostadas, Queso Blanco y Mermelada</p>
+                                    <p class="card-text">$550</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card promocion">
+                                <img src="../img/plato_default.png" class="card-img-top" alt="promo1">
+                                <div class="card-body">
+                                    <p class="card-text">Cafe Americano + Brownie/Alfajor/Lemoncito</p>
+                                    <p class="card-text">$530</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
     
-                <article class="promocionCafeteria">
-                    <img src="../img/plato_default.png" alt="promo2">
-                    <h3 class="plato">Cafe o Te c/ Leche , Ensalada de Frutas, Yogurt, Cereales</h3>
-                    <h3 class="precio">$1000</h3>
-                </article>
-    
-                <article class="promocionCafeteria">
-                    <img src="../img/plato_default.png" alt="promo3">
-                    <h3 class="plato">Cafe o Te c/ Leche , 2 Medialunas de Jamon y Queso, Jugo de Naranja Chico</h3>
-                    <h3 class="precio">$800</h3>
-                </article>
-    
-                <article class="promocionCafeteria">
-                    <img src="../img/plato_default.png" alt="promo4">
-                    <h3 class="plato">Cafe o Te c/ Leche, Tostadas, Queso Blanco y Mermelada</h3>
-                    <h3 class="precio">$550</h3>
-                </article>
-    
-                <article class="promocionCafeteria">
-                    <img src="../img/plato_default.png" alt="promo5">
-                    <h3 class="plato">Cafe Americano + Brownie/Alfajor/Lemoncito</h3>
-                    <h3 class="precio">$530</h3>
-                </article>
-    
-                <article class="promocionCafeteria">
-                    <img src="../img/plato_default.png" alt="promo6">
-                    <h3 class="plato">Submarino c/ 2 Medialunas</h3>
-                    <h3 class="precio">$550</h3>
-                </article>
-    
-                <article class="promocionCafeteria">
-                    <img src="../img/plato_default.png" alt="promo7">
-                    <h3 class="plato">Cafe o Te c/ Leche + Porción de Torta</h3>
-                    <h3 class="precio">$730</h3>
-                </article>
-    
-                <article class="promocionCafeteria">
-                    <img src="../img/plato_default.png" alt="promo8">
-                    <h3 class="plato">Jugo de Naranja Grande + Tostado Mixto</h3>
-                    <h3 class="precio">$800</h3>
-                </article>
-    
-                <article class="promocionCafeteria">
-                    <img src="../img/plato_default.png" alt="promo9">
-                    <h3 class="plato">Cafe c/ Leche o Licuado o Jugo + 1/2 Tostado</h3>
-                    <h3 class="precio">$650</h3>
-                </article>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card promocion">
+                                <img src="../img/plato_default.png" class="card-img-top" alt="promo1">
+                                <div class="card-body">
+                                    <p class="card-text">Submarino c/ 2 Medialunas</p>
+                                    <p class="card-text">$550</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card promocion">
+                                <img src="../img/plato_default.png" class="card-img-top" alt="promo1">
+                                <div class="card-body">
+                                    <p class="card-text">Cafe o Te c/ Leche + Porción de Torta</p>
+                                    <p class="card-text">$730</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card promocion">
+                                <img src="../img/plato_default.png" class="card-img-top" alt="promo1">
+                                <div class="card-body">
+                                    <p class="card-text">Jugo de Naranja Grande + Tostado Mixto</p>
+                                    <p class="card-text">$800</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card promocion">
+                                <img src="../img/plato_default.png" class="card-img-top" alt="promo1">
+                                <div class="card-body">
+                                    <p class="card-text">Cafe c/ Leche o Licuado o Jugo + 1/2 Tostado</p>
+                                    <p class="card-text">$650</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a class="btn_descarga" href="MENÚ RISTRETTO.pdf" download="MenúRisttretoPrueba.pdf">
+    
+            <div class="promocionesRestaurant">
+                <h2 class="tituloPromoción">Promociones del Restaurant</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card promocion">
+                                <img src="../img/plato_default.png" class="card-img-top" alt="promo1">
+                                <div class="card-body">
+                                    <p class="card-text">Promo Pizza Grande de Muzzarella + 1 Porron Quilmes</p>
+                                    <p class="card-text">$1300</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card promocion">
+                                <img src="../img/plato_default.png" class="card-img-top" alt="promo1">
+                                <div class="card-body">
+                                    <p class="card-text">Promo Pizza Grande Napolitana + 1 Porron Quilmes</p>
+                                    <p class="card-text">$1500</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card promocion">
+                                <img src="../img/plato_default.png" class="card-img-top" alt="promo1">
+                                <div class="card-body">
+                                    <p class="card-text">Promo Pizza Grande Jamon y Morrones + 1 Porron Quilmes </p>
+                                    <p class="card-text">$1700</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card promocion">
+                                <img src="../img/plato_default.png" class="card-img-top" alt="promo1">
+                                    <div class="card-body">
+                                        <p class="card-text">Tabla de Queso y Fiambre
+                                            (Jamon Cocido, Jamon Crudo, 
+                                            Queso, Salame, Mortadela y Aceitunas)
+                                            + 1 Porron Quilmes</p>
+                                        <p class="card-text">$1800</p>
+                                    </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card promocion">
+                                <img src="../img/plato_default.png" class="card-img-top" alt="promo1">
+                                <div class="card-body">
+                                    <p class="card-text">Tabla Caliente
+                                        (Dados de Queso, Salchichas, Aros de 
+                                        Cebolla, Croquetas de Acelga, Milanesitas)
+                                        + 1 Porron Quilmes</p>
+                                    <p class="card-text">$2000</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+    
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card promocion">
+                                <img src="../img/plato_default.png" class="card-img-top" alt="promo1">
+                                <div class="card-body">
+                                    <p class="card-text">Promo Rabas + Papas Ristretto (Crema, Queso y Panceta) + 1 Porron Quilmes </p>
+                                    <p class="card-text">$1900</p>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="downloadMenuBtnDiv">
+            <a class="btn_descarga" href="./MENé RISTRETTO.pdf" download="MenúRisttretoPrueba.pdf">
                 <i class="fa-solid fa-download"></i>
-                Podés descargar nuestro menú haciendo click acá
+                Estas son solo las promociones, no dudes en descargar
+                nuestro menú haciendo click acá para poder ver todos
+                los platos que ofrecemos
                 <i class="fa-solid fa-download"></i>
             </a>
         </div>
+        <footer>
+            <h2 class="presentacionRedesSociales">Seguinos en nuestras redes sociales</h2>
+            <div class="div__social">
+                <ul>
+                    <li class="btn_social">
+                        <a href="https://www.facebook.com/RistrettoResto" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="btn_social">
+                        <a href="https://www.instagram.com/ristrettocafebsas/?hl=es" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>
+                &copy; Todos los derechos reservados
+            </p>  
+            <p>
+                Made with <g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
+                    <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"></g-emoji> by Santiago Nahuel Ruiz Sugliani
+            </p>
+        </footer>
     </div>
 
-    <footer>
-        <h2 class="presentacionRedesSociales">Seguinos en nuestras redes sociales</h2>
-        <div class="div__social">
-            <ul>
-                <li class="btn_social">
-                    <a href="https://www.facebook.com/RistrettoResto" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </li>
-                <li class="btn_social">
-                    <a href="https://www.instagram.com/ristrettocafebsas/?hl=es" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <p>
-            &copy; Todos los derechos reservados
-        </p>  
-        <p>
-            Made with <g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
-                <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"></g-emoji> by Santiago Nahuel Ruiz Sugliani
-        </p>
-    </footer>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
