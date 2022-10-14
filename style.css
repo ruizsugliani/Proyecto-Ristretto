@@ -55,7 +55,7 @@ h2 {
     font-size: 3em;
 }
 
-.headerContainer {
+header {
     display: flex;
     flex-direction: row;
     background-color: var(--first_color);
@@ -261,7 +261,7 @@ iframe {
 }
 
 .downloadMenuBtnDiv {
-    margin: 1em;
+    padding-bottom: 1em;
 }
 
 .btn_descarga {
@@ -282,28 +282,18 @@ iframe {
 
 /* CSS CONTACTO*/
 
-.mainContactPageContainer {
+.contactMainDiv {
     background-image: url(./img/contacto_background_image.jpg);
     background-size: cover;
-    display: grid;
-    justify-items: stretch;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    grid-template-areas: 
-        "headerContainer"
-        "header__nav"
-        "contactDataContainer"
-        "footer"    
-    ;
-}
-
-.contactDataContainer {
-    justify-self: center;
-    align-self: center;
+    height: 100%;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
-.contactDataContainer label {
+.contactMainDiv label {
     -webkit-text-stroke: 0.05em var(--first_color);
     display: block;
     font-size: 3em;
@@ -312,7 +302,7 @@ iframe {
     user-select: none;
 }
 
-.contactDataContainer input {
+.contactMainDiv input {
     font-size: 3em;
     border: 0.05em solid var(--first_color);
     border-radius: 1.5em;
@@ -324,16 +314,12 @@ iframe {
     border-radius: 0.5em;
 }
 
-@media screen and (max-width: 652px) {
-    .contactDataContainer label {
-        font-size: 1.8em;
-    }
-    
-    .contactDataContainer input {
-        font-size: 1.8em;
-    }
-    
-    .messageSection textarea {
-        font-size: 1.8em;
+.sendBtn {
+    margin-top: 0.5em;
+}
+
+@media (max-width: 820px) {
+    .contactMainDiv {
+        padding: 0em 1em 1em 1em;
     }
 }

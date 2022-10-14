@@ -15,98 +15,91 @@
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Pacifico&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    
-    <div class="mainContactPageContainer">
 
-        <header class="headerContainer">
-            <img class="header__logo animate__animated animate__fadeIn" src="img/Logo.png" alt="Logo Ristretto">
-            <h1 class="header__h1 animate__animated animate__fadeIn">Ristretto Café Resto</h1>
-            <img class="header__logo animate__animated animate__fadeIn" src="img/Logo.png" alt="Logo Ristretto">
-        </header>
-    
-        <nav>
-            <ul class="nav__menu">
-                <li class="btn animate__animated animate__fadeIn">
-                    <a href="index.html">
-                        <i class="fa-solid fa-house"></i>
-                        Home
+    <header>
+        <img class="header__logo animate__animated animate__fadeIn" src="img/Logo.png" alt="Logo Ristretto">
+        <h1 class="header__h1 animate__animated animate__fadeIn">Ristretto Café Resto</h1>
+        <img class="header__logo animate__animated animate__fadeIn" src="img/Logo.png" alt="Logo Ristretto">
+    </header>
+
+    <nav>
+        <ul class="nav__menu">
+            <li class="btn animate__animated animate__fadeIn">
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+            </li>
+            <li class="btn animate__animated animate__fadeIn">
+                <a href="nosotros.html">
+                    <i class="fa-solid fa-user"></i>
+                    Nosotros
+                </a>
+            </li>
+            <li class="btn animate__animated animate__fadeIn">
+                <a href="local.html">
+                    <i class="fa-solid fa-shop"></i>
+                    Local
+                </a>
+            </li>
+            <li class="btn animate__animated animate__fadeIn">
+                <a href="menu.html">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    Menú
+                </a>
+            </li>
+            <li class="btn animate__animated animate__fadeIn">
+                <a href="contacto.html">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Contacto
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="contactMainDiv"> 
+        <form action="">
+            <div class="col">
+                <label for="Nombre">Nombre y apellido</label>
+                <input type="text" name="Nombre" class="form-control">
+        
+                <label for="EMail">Correo electrónico</label>
+                <input type="email" name="EMail" class="form-control">
+                
+                <div class="messageSection">
+                    <label for="Mensaje">Tu mensaje</label>
+                    <textarea name="Mensaje" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <input type="submit" value="Enviar" class="form-control sendBtn">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <h2 class="presentacionRedesSociales">Seguinos en nuestras redes sociales</h2>
+        <div class="div__social">
+            <ul>
+                <li class="btn_social">
+                    <a href="https://www.facebook.com/RistrettoResto" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
                     </a>
                 </li>
-                <li class="btn animate__animated animate__fadeIn">
-                    <a href="nosotros.html">
-                        <i class="fa-solid fa-user"></i>
-                        Nosotros
-                    </a>
-                </li>
-                <li class="btn animate__animated animate__fadeIn">
-                    <a href="local.html">
-                        <i class="fa-solid fa-shop"></i>
-                        Local
-                    </a>
-                </li>
-                <li class="btn animate__animated animate__fadeIn">
-                    <a href="menu.html">
-                        <i class="fa-solid fa-mug-hot"></i>
-                        Menú
-                    </a>
-                </li>
-                <li class="btn animate__animated animate__fadeIn">
-                    <a href="contacto.html">
-                        <i class="fa-solid fa-paper-plane"></i>
-                        Contacto
+                <li class="btn_social">
+                    <a href="https://www.instagram.com/ristrettocafebsas/?hl=es" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
                 </li>
             </ul>
-        </nav>
-    
-        <section class="contactDataContainer">
-            <form action="">
-                <section class="personalDataSection">
-                    <section class="nameSection">
-                        <label for="Nombre">Nombre y apellido</label>
-                        <input type="text" name="Nombre">
-                    </section>
-                    
-                    <section class="mailSection">
-                        <label for="EMail">Correo electrónico</label>
-                        <input type="email" name="EMail">
-                    </section>
-                </section>
-                
-                <section class="messageSection">
-                    <label for="Mensaje">Tu mensaje</label>
-                    <textarea name="Mensaje" id="" cols="30" rows="10"></textarea>
-                    <input type="submit" value="Enviar">
-                </section>
-            </form>
-        </section>
-    
-        <footer>
-            <h2 class="presentacionRedesSociales">Seguinos en nuestras redes sociales</h2>
-            <div class="div__social">
-                <ul>
-                    <li class="btn_social">
-                        <a href="https://www.facebook.com/RistrettoResto" target="_blank">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="btn_social">
-                        <a href="https://www.instagram.com/ristrettocafebsas/?hl=es" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <p>
-                &copy; Todos los derechos reservados
-            </p>  
-            <p>
-                Made with <g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
-                    <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"></g-emoji> by Santiago Nahuel Ruiz Sugliani
-            </p>
-        </footer>
+        </div>
+        <p>
+            &copy; Todos los derechos reservados
+        </p>  
+        <p>
+            Made with <g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
+                <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"></g-emoji> by Santiago Nahuel Ruiz Sugliani
+        </p>
+    </footer>
 
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
