@@ -158,7 +158,7 @@ footer p {
 
 /* CSS NOSOTROS*/
 
-.nosotrosMainContainer {
+.nosotrosMainDiv {
     background-image: url(./img/nosotros_background_image.jpg);
     background-size: cover;
     display: flex;
@@ -168,9 +168,20 @@ footer p {
     justify-items: center;
     align-items: center;
     align-content: center;
+    height: 100%;
+    padding: 2em;
 }
 
-.divSobreNosotros {
+.nosotrosMainDiv h3 {
+    font-size: 5em;
+    border-bottom: 3px solid var(--fourth_color);
+}
+
+.nosotrosMainDiv p {
+    font-size: 2em;
+}
+
+.informationAboutUs {
     background-color: var(--third_color);
     text-align: center;
     color: white;
@@ -179,16 +190,6 @@ footer p {
     border: 5px solid var(--fourth_color);
     border-radius: 25px;
     padding: 20px;
-}
-
-.presentacion {
-    top: 50px;
-    left: 50px;
-    right: 50px;
-    bottom: 50px;
-    background-color: var(--third_color);
-    color: white;
-    text-align: center;
 }
 
 /* CSS LOCAL*/
