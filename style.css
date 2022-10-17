@@ -182,14 +182,45 @@ footer p {
 }
 
 .informationAboutUs {
-    background-color: var(--third_color);
     text-align: center;
     color: white;
     display: flex;
     flex-direction: column;
+    background-color: var(--third_color);
     border: 5px solid var(--fourth_color);
     border-radius: 25px;
     padding: 20px;
+}
+
+.commentary-row {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.commentariesAboutUs {
+    color: white;
+    text-align: center;
+    margin-top: 2em;
+    background-color: var(--third_color);
+    border: 5px solid var(--fourth_color);
+    border-radius: 25px;
+    padding: 1em;
+}
+
+.commentariesAboutUs h3 {
+    font-size: 5em;
+    border-bottom: 3px solid var(--fourth_color);
+    align-items: center;
+}
+
+.commentariesAboutUs p {
+    font-size: 1em;
+    color: var(--fourth_color);
+}
+
+.commentary-card {
+    border: 5px solid var(--fourth_color);
 }
 
 /* CSS LOCAL*/
