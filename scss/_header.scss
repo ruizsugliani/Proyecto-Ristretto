@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--first_color);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    .header__logo {
+        background-color: transparent;
+        height: 6.25rem;
+        width: 6.25rem;
+    }
+}
+
+
+nav {
+    background-color: var(--second_color);
+    position: sticky;
+    top:0;
+    
+    .nav__menu {
+        list-style-type: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding: 1rem;
+
+        .btn {
+            font-size: 2em;
+            
+            a {
+                color: var(--fourth_color);
+                text-decoration: none;
+            }
+        }
+    }
+}

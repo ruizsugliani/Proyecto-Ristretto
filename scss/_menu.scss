@@ -1,0 +1,77 @@
+/* CSS MENÚ*/
+
+.menuMainDiv {
+    background: rgb(111,29,27);
+    background: linear-gradient(360deg, rgba(111,29,27,1) 0%, rgba(67,40,24,1) 31%, rgba(153,88,42,1) 50%, rgba(67,40,24,1) 72%, rgba(111,29,27,1) 79%);
+    text-align: center;
+    height: 100%;
+    
+    .promocionesCafeteria {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 1em;
+        
+        .tituloPromoción {
+            color: #fcfffc;
+        }
+        
+        .card{
+            --bs-card-spacer-y: 0em;
+            --bs-card-spacer-x: 0em;
+            position: static;
+            font-weight: bolder;
+            font-size:1.5em
+        }
+        
+        .promocion {
+            display: inline-block;
+            border: 3px solid black;
+            background-color: #fcfffc;
+            width: 12em;
+        }
+    }
+    
+    .promocionesRestaurant {
+        border-top: 3px solid white;
+        
+        .tituloPromoción {
+            color: #fcfffc;
+        }
+        
+        .card{
+            --bs-card-spacer-y: 0em;
+            --bs-card-spacer-x: 0em;
+            position: static;
+            font-weight: bolder;
+            font-size:1.5em
+        }
+
+        .promocion {
+            display: inline-block;
+            border: 3px solid black;
+            background-color: #fcfffc;
+            width: 12em;
+        }
+    }
+    
+    .downloadMenuBtnDiv {
+        padding-bottom: 1em;
+        
+        .btn_descarga {
+            font-size: 2em;
+            display: flex;
+            background-color: #6f1d1b;
+            color: var(--first_color);
+            border: 3px solid var(--first_color);
+            border-radius: 1em;
+            padding-bottom: 1em;
+            padding-top: 1em;
+            justify-content: center;
+            
+            i {
+                padding: 0em 1em 0em 1em
+            }
+        }
+    }
+}

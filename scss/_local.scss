@@ -1,0 +1,61 @@
+/* CSS LOCAL*/
+
+.localMainContainer {
+    background-image: url(../img/local_background_image.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    height: 100%;
+    padding: 2em;
+    
+    h3 {
+        font-size: 5em;
+        border-bottom: 3px solid var(--fourth_color);
+    }
+    
+    li {
+        font-size: 1.8em;
+    }
+    
+    .informationDiv {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--third_color);
+        border-radius: 3em;
+        border: 5px solid var(--fourth_color);
+        color: var(--fourth_color);
+        border-top: 3px solid var(--fourth_color);
+        
+        iframe {
+            width: 100%;
+        }
+        
+        p {
+            font-size: 1.8em;
+        }
+    }
+    
+    .servicesDiv {
+        display:flex;
+        flex-direction: column;
+        margin-top:2em;
+        padding: 1em;
+        color: var(--fourth_color);
+        text-align: center;
+        border-radius: 3em;
+        background-color: var(--third_color);
+        border: 5px solid var(--fourth_color);
+        
+        .services {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+}

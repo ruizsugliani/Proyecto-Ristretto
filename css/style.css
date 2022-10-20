@@ -1,0 +1,301 @@
+@charset "UTF-8";
+:root {
+  /* VARIABLES VISTAS EN AFTER CLASS/*
+    /* Palette */
+  --first_color: #ffe6a7;
+  --second_color: #bb9457;
+  --third_color: #99582a;
+  --fourth_color: #432818;
+  /* Font Sizes */
+  --text-xxl: 4.8em;
+  --text-xl: 3.6em;
+  --text-lg: 3.2em;
+  --text-md: 2.2em;
+  --text-sm: 1.6em;
+  --text-xs: 1.2em;
+  /* Spacings */
+  --sp-xxl: 12rem;
+  --sp-xl: 8rem;
+  --sp-lg: 5rem;
+  --sp-md: 3.2rem;
+  --sp-sm: 1.6rem;
+  --sp-xs: 0.8rem; }
+
+/* BOOTSTRAP */
+dl, ol, ul {
+  margin-bottom: 0; }
+
+/* CSS DEFAULT POR CADA PÁGINA */
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none; }
+
+body {
+  font-family: 'Ms Madi', cursive;
+  font-weight: bold;
+  list-style-type: none;
+  user-select: none; }
+
+h1 {
+  color: var(--fourth_color);
+  font-size: 3.75em; }
+
+h2 {
+  font-size: 3em; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--first_color);
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+  header .header__logo {
+    background-color: transparent;
+    height: 6.25rem;
+    width: 6.25rem; }
+
+nav {
+  background-color: var(--second_color);
+  position: sticky;
+  top: 0; }
+  nav .nav__menu {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 1rem; }
+    nav .nav__menu .btn {
+      font-size: 2em; }
+      nav .nav__menu .btn a {
+        color: var(--fourth_color);
+        text-decoration: none; }
+
+footer {
+  color: var(--fourth_color);
+  width: 100%;
+  background-color: var(--first_color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  bottom: 0; }
+  footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  footer p {
+    font-size: 1.5em;
+    font-weight: normal; }
+  footer .btn_social {
+    font-size: 3.125em;
+    padding: 0.625rem; }
+    footer .btn_social a {
+      text-decoration: none;
+      color: var(--fourth_color); }
+
+/* CSS HOME */
+.homeMainDiv {
+  display: flex;
+  pointer-events: none;
+  background-image: url(../img/home_background_image.jpg);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1em; }
+  .homeMainDiv .welcomeDiv {
+    background-color: var(--third_color);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--fourth_color);
+    border-radius: 25px;
+    padding: 1em; }
+    .homeMainDiv .welcomeDiv h2 {
+      font-size: 3em; }
+    .homeMainDiv .welcomeDiv .welcomeParagraphDiv {
+      border-top: 3px solid var(--fourth_color);
+      font-size: 2.5em;
+      font-weight: normal; }
+
+/* CSS NOSOTROS*/
+.nosotrosMainDiv {
+  background-image: url(../img/nosotros_background_image.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  padding: 2em; }
+  .nosotrosMainDiv .informationAboutUs {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--third_color);
+    border: 5px solid var(--fourth_color);
+    border-radius: 25px;
+    padding: 20px; }
+    .nosotrosMainDiv .informationAboutUs h3 {
+      font-size: 5em;
+      border-bottom: 3px solid var(--fourth_color); }
+    .nosotrosMainDiv .informationAboutUs p {
+      font-size: 2em; }
+
+.commentariesAboutUs {
+  color: white;
+  text-align: center;
+  margin-top: 2em;
+  background-color: var(--third_color);
+  border: 5px solid var(--fourth_color);
+  border-radius: 25px;
+  padding: 1em; }
+  .commentariesAboutUs h3 {
+    font-size: 5em;
+    border-bottom: 3px solid var(--fourth_color);
+    align-items: center; }
+  .commentariesAboutUs p {
+    font-size: 1em;
+    color: var(--fourth_color); }
+  .commentariesAboutUs .commentary-row {
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+    justify-items: center; }
+    .commentariesAboutUs .commentary-row .commentary-card {
+      border: 5px solid var(--fourth_color); }
+
+/* CSS LOCAL*/
+.localMainContainer {
+  background-image: url(../img/local_background_image.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  height: 100%;
+  padding: 2em; }
+  .localMainContainer h3 {
+    font-size: 5em;
+    border-bottom: 3px solid var(--fourth_color); }
+  .localMainContainer li {
+    font-size: 1.8em; }
+  .localMainContainer .informationDiv {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--third_color);
+    border-radius: 3em;
+    border: 5px solid var(--fourth_color);
+    color: var(--fourth_color);
+    border-top: 3px solid var(--fourth_color); }
+    .localMainContainer .informationDiv iframe {
+      width: 100%; }
+    .localMainContainer .informationDiv p {
+      font-size: 1.8em; }
+  .localMainContainer .servicesDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    padding: 1em;
+    color: var(--fourth_color);
+    text-align: center;
+    border-radius: 3em;
+    background-color: var(--third_color);
+    border: 5px solid var(--fourth_color); }
+    .localMainContainer .servicesDiv .services {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center; }
+
+/* CSS MENÚ*/
+.menuMainDiv {
+  background: #6f1d1b;
+  background: linear-gradient(360deg, #6f1d1b 0%, #432818 31%, #99582a 50%, #432818 72%, #6f1d1b 79%);
+  text-align: center;
+  height: 100%; }
+  .menuMainDiv .promocionesCafeteria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1em; }
+    .menuMainDiv .promocionesCafeteria .tituloPromoción {
+      color: #fcfffc; }
+    .menuMainDiv .promocionesCafeteria .card {
+      --bs-card-spacer-y: 0em;
+      --bs-card-spacer-x: 0em;
+      position: static;
+      font-weight: bolder;
+      font-size: 1.5em; }
+    .menuMainDiv .promocionesCafeteria .promocion {
+      display: inline-block;
+      border: 3px solid black;
+      background-color: #fcfffc;
+      width: 12em; }
+  .menuMainDiv .promocionesRestaurant {
+    border-top: 3px solid white; }
+    .menuMainDiv .promocionesRestaurant .tituloPromoción {
+      color: #fcfffc; }
+    .menuMainDiv .promocionesRestaurant .card {
+      --bs-card-spacer-y: 0em;
+      --bs-card-spacer-x: 0em;
+      position: static;
+      font-weight: bolder;
+      font-size: 1.5em; }
+    .menuMainDiv .promocionesRestaurant .promocion {
+      display: inline-block;
+      border: 3px solid black;
+      background-color: #fcfffc;
+      width: 12em; }
+  .menuMainDiv .downloadMenuBtnDiv {
+    padding-bottom: 1em; }
+    .menuMainDiv .downloadMenuBtnDiv .btn_descarga {
+      font-size: 2em;
+      display: flex;
+      background-color: #6f1d1b;
+      color: var(--first_color);
+      border: 3px solid var(--first_color);
+      border-radius: 1em;
+      padding-bottom: 1em;
+      padding-top: 1em;
+      justify-content: center; }
+      .menuMainDiv .downloadMenuBtnDiv .btn_descarga i {
+        padding: 0em 1em 0em 1em; }
+
+/* CSS CONTACTO*/
+.contactMainDiv {
+  background-image: url(../img/contacto_background_image.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .contactMainDiv label {
+    -webkit-text-stroke: 0.05em var(--first_color);
+    display: block;
+    font-size: 3em;
+    padding-top: 1rem;
+    font-weight: bold;
+    user-select: none; }
+  .contactMainDiv input {
+    font-size: 3em;
+    border: 0.05em solid var(--first_color);
+    border-radius: 1.5em; }
+  .contactMainDiv .messageSection textarea {
+    font-size: 3em;
+    border: 0.05em solid var(--first_color);
+    border-radius: 0.5em; }
+    .contactMainDiv .messageSection textarea .sendBtn {
+      margin-top: 0.5em; }

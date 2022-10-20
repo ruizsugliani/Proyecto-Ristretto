@@ -1,0 +1,23 @@
+/* CSS DEFAULT POR CADA PÁGINA */
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    font-family: 'Ms Madi', cursive;
+    font-weight: bold;
+    list-style-type: none;
+    user-select: none;
+}
+
+h1 {
+    color: var(--fourth_color);
+    font-size: 3.75em;
+}
+
+h2 {
+    font-size: 3em;
+}

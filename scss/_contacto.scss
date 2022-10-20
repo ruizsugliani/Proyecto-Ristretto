@@ -1,0 +1,38 @@
+/* CSS CONTACTO*/
+
+.contactMainDiv {
+    background-image: url(../img/contacto_background_image.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+    label {
+        -webkit-text-stroke: 0.05em var(--first_color);
+        display: block;
+        font-size: 3em;
+        padding-top: 1rem;
+        font-weight: bold;
+        user-select: none;
+    }
+    
+    input {
+        font-size: 3em;
+        border: 0.05em solid var(--first_color);
+        border-radius: 1.5em;
+    }
+    
+    .messageSection textarea {
+        font-size: 3em;
+        border: 0.05em solid var(--first_color);
+        border-radius: 0.5em;
+        
+        .sendBtn {
+            margin-top: 0.5em;
+        }
+    }
+    
+}

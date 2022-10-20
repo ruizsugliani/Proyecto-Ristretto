@@ -1,0 +1,31 @@
+footer {
+    color: var(--fourth_color);
+    width: 100%;
+    background-color: var(--first_color);
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    bottom: 0;
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    p {
+        font-size: 1.5em;
+        font-weight: normal;
+    }
+    
+    .btn_social {
+        font-size: 3.125em;
+        padding: 0.625rem;
+
+        a {
+            text-decoration: none;
+            color: var(--fourth_color);
+        }
+    }
+}
