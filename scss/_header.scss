@@ -1,13 +1,11 @@
 header {
-    display: flex;
-    flex-direction: row;
+    @include set-display-flex(row);
     background-color: var(--first_color);
     text-align: center;
     justify-content: center;
     align-items: center;
     
     .header__logo {
-        background-color: transparent;
         height: 6.25rem;
         width: 6.25rem;
     }

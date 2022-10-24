@@ -3,13 +3,12 @@
 .nosotrosMainDiv {
     background-image: url(../img/nosotros_background_image.jpg);
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    pointer-events: none;
+    @include set-display-flex(column);
     justify-content: center;
     justify-items: center;
     align-items: center;
     align-content: center;
+    pointer-events: none;
     height: 100%;
     padding: 2em;
     
@@ -31,6 +30,31 @@
         
         p {
             font-size: 2em;
+        }
+    }
+
+    .stadisticsDiv {
+        @include set-display-flex(row);
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 5em;
+    
+        article {
+            color: white;
+            text-align: center;
+            background-color: var(--third_color);
+            padding: 1em;
+            border: 0.5em solid var(--fourth_color);
+            border-radius: 25px;
+            min-width: 10em;
+            min-height: 10em;
+            width: 12.5em;
+            height: 12.5em;
+    
+            img {
+                height: 4em;
+                width: 4em;
+            }
         }
     }
 }

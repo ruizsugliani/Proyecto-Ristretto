@@ -1,0 +1,9 @@
+@mixin set-background-for-main-container ($background-path) {
+    background-image: url($background-path);
+    background-size: cover;
+}
+
+@mixin set-display-flex ($flex-direction) {
+    display: flex;
+    flex-direction: $flex-direction;
+}
