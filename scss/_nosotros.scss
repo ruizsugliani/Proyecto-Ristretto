@@ -1,35 +1,32 @@
 /* CSS NOSOTROS*/
 
 .nosotrosMainDiv {
+    @include set-display-flex(column);
     background-image: url(../img/nosotros_background_image.jpg);
     background-size: cover;
-    @include set-display-flex(column);
     justify-content: center;
     justify-items: center;
     align-items: center;
     align-content: center;
     pointer-events: none;
-    height: 100%;
     padding: 2em;
     
     
     .informationAboutUs {
+        @include set-display-flex(column);
         text-align: center;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        background-color: var(--third_color);
+        color: var(--fourth_color);
+        background-color: var(--first_color);
         border: 5px solid var(--fourth_color);
         border-radius: 25px;
-        padding: 20px;
         
-        h3 {
+        stroke {
             font-size: 5em;
-            border-bottom: 3px solid var(--fourth_color);
         }
         
         p {
-            font-size: 2em;
+            border-top: 3px solid var(--fourth_color);
+            font-size: 3em;
         }
     }
 
@@ -37,60 +34,29 @@
         @include set-display-flex(row);
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin: 5em;
+        margin-top:1.5em;
     
         article {
-            color: white;
-            text-align: center;
-            background-color: var(--third_color);
-            padding: 1em;
+            color: var(--fourth_color);
             border: 0.5em solid var(--fourth_color);
             border-radius: 25px;
+            background-color: var(--first_color);
+            text-align: center;
+            padding: 1em;
             min-width: 10em;
             min-height: 10em;
             width: 12.5em;
             height: 12.5em;
+
+            stroke {
+                display: block;
+                font-size:2em;
+            }
     
             img {
                 height: 4em;
                 width: 4em;
             }
-        }
-    }
-}
-
-
-
-
-
-.commentariesAboutUs {
-    color: white;
-    text-align: center;
-    margin-top: 2em;
-    background-color: var(--third_color);
-    border: 5px solid var(--fourth_color);
-    border-radius: 25px;
-    padding: 1em;
-    
-    h3 {
-        font-size: 5em;
-        border-bottom: 3px solid var(--fourth_color);
-        align-items: center;
-    }
-    
-    p {
-        font-size: 1em;
-        color: var(--fourth_color);
-    }
-
-    .commentary-row {
-        margin-top: 0.5em;
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        
-        .commentary-card {
-            border: 5px solid var(--fourth_color);
         }
     }
 }

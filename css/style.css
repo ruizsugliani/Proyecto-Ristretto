@@ -104,17 +104,15 @@ footer {
   flex-direction: column;
   justify-content: center;
   pointer-events: none;
-  height: 100%;
   padding: 1em; }
   .homeMainDiv .presentationDiv {
     display: flex;
     flex-direction: column;
+    color: var(--fourth_color);
     background-color: var(--first_color);
     border: 5px solid var(--fourth_color);
-    color: var(--fourth_color);
-    text-align: center;
     border-radius: 25px;
-    padding: 1em; }
+    text-align: center; }
     .homeMainDiv .presentationDiv .welcomeTitle {
       font-size: 5em; }
     .homeMainDiv .presentationDiv p {
@@ -127,74 +125,52 @@ footer {
 
 /* CSS NOSOTROS*/
 .nosotrosMainDiv {
-  background-image: url(../img/nosotros_background_image.jpg);
-  background-size: cover;
   display: flex;
   flex-direction: column;
+  background-image: url(../img/nosotros_background_image.jpg);
+  background-size: cover;
   justify-content: center;
   justify-items: center;
   align-items: center;
   align-content: center;
   pointer-events: none;
-  height: 100%;
   padding: 2em; }
   .nosotrosMainDiv .informationAboutUs {
-    text-align: center;
-    color: white;
     display: flex;
     flex-direction: column;
-    background-color: var(--third_color);
+    text-align: center;
+    color: var(--fourth_color);
+    background-color: var(--first_color);
     border: 5px solid var(--fourth_color);
-    border-radius: 25px;
-    padding: 20px; }
-    .nosotrosMainDiv .informationAboutUs h3 {
-      font-size: 5em;
-      border-bottom: 3px solid var(--fourth_color); }
+    border-radius: 25px; }
+    .nosotrosMainDiv .informationAboutUs stroke {
+      font-size: 5em; }
     .nosotrosMainDiv .informationAboutUs p {
-      font-size: 2em; }
+      border-top: 3px solid var(--fourth_color);
+      font-size: 3em; }
   .nosotrosMainDiv .stadisticsDiv {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 5em; }
+    margin-top: 1.5em; }
     .nosotrosMainDiv .stadisticsDiv article {
-      color: white;
-      text-align: center;
-      background-color: var(--third_color);
-      padding: 1em;
+      color: var(--fourth_color);
       border: 0.5em solid var(--fourth_color);
       border-radius: 25px;
+      background-color: var(--first_color);
+      text-align: center;
+      padding: 1em;
       min-width: 10em;
       min-height: 10em;
       width: 12.5em;
       height: 12.5em; }
+      .nosotrosMainDiv .stadisticsDiv article stroke {
+        display: block;
+        font-size: 2em; }
       .nosotrosMainDiv .stadisticsDiv article img {
         height: 4em;
         width: 4em; }
-
-.commentariesAboutUs {
-  color: white;
-  text-align: center;
-  margin-top: 2em;
-  background-color: var(--third_color);
-  border: 5px solid var(--fourth_color);
-  border-radius: 25px;
-  padding: 1em; }
-  .commentariesAboutUs h3 {
-    font-size: 5em;
-    border-bottom: 3px solid var(--fourth_color);
-    align-items: center; }
-  .commentariesAboutUs p {
-    font-size: 1em;
-    color: var(--fourth_color); }
-  .commentariesAboutUs .commentary-row {
-    margin-top: 0.5em;
-    display: flex;
-    justify-content: center;
-    justify-items: center; }
-    .commentariesAboutUs .commentary-row .commentary-card {
-      border: 5px solid var(--fourth_color); }
 
 /* CSS LOCAL*/
 .localMainContainer {

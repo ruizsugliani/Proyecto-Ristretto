@@ -6,17 +6,15 @@
     flex-direction: column;
     justify-content: center;
     pointer-events: none;
-    height: 100%;
     padding: 1em;
     
     .presentationDiv {
         @include set-display-flex(column);
+        color: var(--fourth_color);
         background-color: var(--first_color);
         border: 5px solid var(--fourth_color);
-        color: var(--fourth_color);
-        text-align: center;
         border-radius: 25px;
-        padding: 1em;
+        text-align: center;
         
         .welcomeTitle {
             font-size: 5em;
