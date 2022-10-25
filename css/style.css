@@ -298,28 +298,31 @@ footer {
 
 /* CSS CONTACTO*/
 .contactMainDiv {
+  color: var(--first_color);
   background-image: url(../img/contacto_background_image.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding: 2em; }
   .contactMainDiv label {
-    -webkit-text-stroke: 0.05em var(--first_color);
-    display: block;
     font-size: 3em;
     padding-top: 1rem;
     font-weight: bold;
     user-select: none; }
   .contactMainDiv input {
     font-size: 3em;
+    background-color: var(--second_color);
     border: 0.05em solid var(--first_color);
     border-radius: 1.5em; }
+    .contactMainDiv input:focus {
+      background-color: var(--second_color); }
   .contactMainDiv .messageSection textarea {
     font-size: 3em;
+    background-color: var(--second_color);
     border: 0.05em solid var(--first_color);
     border-radius: 0.5em; }
-    .contactMainDiv .messageSection textarea .sendBtn {
-      margin-top: 0.5em; }
+  .contactMainDiv .sendBtn {
+    color: var(--fourth_color);
+    background-color: var(--second_color);
+    margin-top: 0.5em; }
