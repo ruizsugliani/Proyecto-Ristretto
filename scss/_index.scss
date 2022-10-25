@@ -9,36 +9,28 @@
     height: 100%;
     padding: 1em;
     
-    .welcomeDiv {
-        @include set-display-flex(row);
-        background-color: white;
+    .presentationDiv {
+        @include set-display-flex(column);
+        background-color: var(--first_color);
         border: 5px solid var(--fourth_color);
         color: var(--fourth_color);
         text-align: center;
         border-radius: 25px;
         padding: 1em;
-
-        .ristrettoImageDiv {
-            img {
-                width: 100%;
-                height: 100%;
-                border: 3px solid var(--fourth_color);
-                border-radius: 25px;
-            }
+        
+        .welcomeTitle {
+            font-size: 5em;
         }
         
-        .presentationDiv {
-            width: 100%;
-            height: 100%;
-            
-            .h2 {
-                font-size: 3em;
-            }
-
-            p {
-                font-size: 2.5em;
-                font-weight: normal;
-            }
+        p {
+            font-size: 3em;
+            font-weight: normal;
+            border-top: 0.1em solid var(--fourth_color);
+            border-bottom: 0.1em solid var(--fourth_color);
+        }
+        
+        strong {
+            font-size: 3em;
         }
     }
 }

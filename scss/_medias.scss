@@ -1,8 +1,15 @@
 /* MEDIAS */
 
-@media (max-width: 497px) {
-    .homeMainDiv {
-        height: 100%;
+@media (min-width: 1300px) {
+    .welcomeDiv {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border: 5px solid var(--fourth_color);
+        color: var(--fourth_color);
+        text-align: center;
+        border-radius: 25px;
+        padding: 1em;
     }
 }
 
