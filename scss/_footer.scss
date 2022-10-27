@@ -1,10 +1,10 @@
 footer {
+    @include set-display-flex(column);
     color: var(--fourth_color);
-    width: 100%;
     background-color: var(--first_color);
     text-align: center;
-    display: flex;
-    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
     bottom: 0;
     
     strong {
