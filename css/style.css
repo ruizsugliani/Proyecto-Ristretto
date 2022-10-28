@@ -240,44 +240,43 @@ footer {
       align-items: center; }
 
 /* CSS MENÚ*/
+@media (min-width: 1146px) {
+  .promociones {
+    display: flex;
+    flex-direction: column; } }
+
 .menuMainDiv {
   background: #6f1d1b;
   background: linear-gradient(360deg, #6f1d1b 0%, #432818 31%, #99582a 50%, #432818 72%, #6f1d1b 79%);
   text-align: center;
   height: 100%; }
-  .menuMainDiv .promocionesCafeteria {
+  .menuMainDiv .promociones {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 1em; }
-    .menuMainDiv .promocionesCafeteria .tituloPromoción {
-      color: #fcfffc; }
-    .menuMainDiv .promocionesCafeteria .card {
+    flex-direction: row;
+    justify-content: space-around; }
+    .menuMainDiv .promociones .card {
       --bs-card-spacer-y: 0em;
       --bs-card-spacer-x: 0em;
       position: static;
       font-weight: bolder;
       font-size: 1.5em; }
-    .menuMainDiv .promocionesCafeteria .promocion {
-      display: inline-block;
-      border: 3px solid black;
-      background-color: #fcfffc;
-      width: 12em; }
-  .menuMainDiv .promocionesRestaurant {
-    border-top: 3px solid white; }
-    .menuMainDiv .promocionesRestaurant .tituloPromoción {
-      color: #fcfffc; }
-    .menuMainDiv .promocionesRestaurant .card {
-      --bs-card-spacer-y: 0em;
-      --bs-card-spacer-x: 0em;
-      position: static;
-      font-weight: bolder;
-      font-size: 1.5em; }
-    .menuMainDiv .promocionesRestaurant .promocion {
-      display: inline-block;
-      border: 3px solid black;
-      background-color: #fcfffc;
-      width: 12em; }
+    .menuMainDiv .promociones .promocionesCafeteria, .menuMainDiv .promociones .promocionesRestaurant {
+      display: flex;
+      flex-direction: column;
+      margin: 2em;
+      width: 100%;
+      justify-content: space-around; }
+      .menuMainDiv .promociones .promocionesCafeteria .tituloPromoción, .menuMainDiv .promociones .promocionesRestaurant .tituloPromoción {
+        color: #fcfffc; }
+      .menuMainDiv .promociones .promocionesCafeteria .promocion, .menuMainDiv .promociones .promocionesRestaurant .promocion {
+        display: flex;
+        flex-direction: row;
+        border: 3px solid black;
+        background-color: #fcfffc;
+        width: 100%; }
+      .menuMainDiv .promociones .promocionesCafeteria .listadoDePromociones, .menuMainDiv .promociones .promocionesRestaurant .listadoDePromociones {
+        display: flex;
+        flex-direction: column; }
   .menuMainDiv .downloadMenuBtnDiv {
     padding-bottom: 1em; }
     .menuMainDiv .downloadMenuBtnDiv .btn_descarga {
