@@ -285,7 +285,7 @@ footer {
           text-align: center;
           align-items: center;
           padding: 0.5em;
-          max-width: 15em;
+          max-width: 12em;
           font-size: 2em; }
           .menuMainDiv .promociones .promocionesCafeteria .listadoDePromociones .promocion__food, .menuMainDiv .promociones .promocionesRestaurant .listadoDePromociones .promocion__food {
             display: flex;
