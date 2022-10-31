@@ -1,11 +1,5 @@
 /* CSS MENÚ*/
 
-@media (min-width: 1146px) {
-    .promociones {
-        @include set-display-flex(column);
-    }
-}
-
 .menuMainDiv {
     background: rgb(111,29,27);
     background: linear-gradient(360deg, rgba(111,29,27,1) 0%, rgba(67,40,24,1) 31%, rgba(153,88,42,1) 50%, rgba(67,40,24,1) 72%, rgba(111,29,27,1) 79%);
@@ -13,37 +7,48 @@
     height: 100%;
     
     .promociones {
-        @include set-display-flex(row);
-        justify-content: space-around;
-
-        .card{
-            --bs-card-spacer-y: 0em;
-            --bs-card-spacer-x: 0em;
-            position: static;
-            font-weight: bolder;
-            font-size:1.5em
-        }
+        @include set-display-flex(column);
+        justify-content: center;
     
         .promocionesCafeteria {
             @include set-display-flex(column);
             margin: 2em;
-            width: 100%;
-            justify-content: space-around;
+            justify-content: space-evenly;
 
             .tituloPromoción {
                 color: #fcfffc;
             }
             
-            .promocion {
+            .listadoDePromociones {
                 @include set-display-flex(row);
-                border: 3px solid black;
-                background-color: #fcfffc;
-                width: 100%;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                .promocion {
+                    @include set-display-flex(column);
+                    border: 0.5em solid var(--fourth_color);
+                    border-radius: 25px;
+                    background-color: var(--first_color);
+                    text-align: center;
+                    align-items: center;
+                    padding: 0.5em;
+                    max-width: 15em;
+                    font-size: 2em;
+    
+                    &__food {
+                        @include set-display-flex(row);
+                        flex-wrap: wrap;
+                        justify-content:space-evenly;
+    
+                        img {
+                            height:64px;
+                            width:64px;
+                        }
+                    }
+                }
             }
 
-            .listadoDePromociones {
-                @include set-display-flex(column);
-            }
+
         }
         
         .promocionesRestaurant {
@@ -52,9 +57,12 @@
     }
     
     .downloadMenuBtnDiv {
-        padding-bottom: 1em;
-        
+        padding: 2em;
+        display:flex;
+        justify-content: center;
+
         .btn_descarga {
+            width: 50%;
             font-size: 2em;
             display: flex;
             background-color: #6f1d1b;
@@ -64,10 +72,23 @@
             padding-bottom: 1em;
             padding-top: 1em;
             justify-content: center;
-            
+            text-decoration: none;
+                
             i {
-                padding: 0em 1em 0em 1em
+                padding: 0em 1em 0em 1em;
             }
+
+        }
+    }
+
+    .gallery {
+        background-color: var(--first_color);
+        padding: 2em;
+
+        img {
+            width: 100%;
+            padding: 1em;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         }
     }
 }

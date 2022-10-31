@@ -26,6 +26,18 @@
 /* MEDIAS LOCAL PAGE */
 
 /* MEDIAS MENU PAGE */
+@media (max-width: 1300px) {
+    .menuMainDiv {
+        .promociones {
+            @include set-display-flex(column);
+        }
+
+        img {
+            width: 289.5px;
+            height: 289.5px;
+        }
+    }
+}
 
 /* MEDIAS CONTACTO PAGE */
 @media (max-width: 820px) {

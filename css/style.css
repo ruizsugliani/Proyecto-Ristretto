@@ -50,6 +50,13 @@ h2 {
 .animate__animated {
   position: sticky; }
 
+.card {
+  --bs-card-spacer-y: 0em;
+  --bs-card-spacer-x: 0em;
+  position: static;
+  font-weight: bolder;
+  font-size: 1.5em; }
+
 header {
   display: flex;
   flex-direction: row;
@@ -164,7 +171,7 @@ footer {
     .nosotrosMainDiv .stadisticsDiv .stat {
       color: var(--fourth_color);
       border: 0.5em solid var(--fourth_color);
-      border-radius: 25px;
+      border-radius: 100px;
       background-color: var(--first_color);
       text-align: center;
       padding: 1em;
@@ -195,7 +202,7 @@ footer {
 
 /* CSS LOCAL*/
 .localMainContainer {
-  background-image: url(../img/local_background_image.jpg);
+  background-image: url("../img/local_background_image.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -214,7 +221,7 @@ footer {
   .localMainContainer .informationDiv {
     display: flex;
     flex-direction: column;
-    background-color: var(--third_color);
+    background-color: var(--first_color);
     border-radius: 3em;
     border: 5px solid var(--fourth_color);
     color: var(--fourth_color);
@@ -225,26 +232,29 @@ footer {
       font-size: 1.8em; }
   .localMainContainer .servicesDiv {
     display: flex;
-    flex-direction: column;
-    margin-top: 2em;
-    padding: 1em;
-    color: var(--fourth_color);
-    text-align: center;
-    border-radius: 3em;
-    background-color: var(--third_color);
-    border: 5px solid var(--fourth_color); }
-    .localMainContainer .servicesDiv .services {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center; }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1.5em; }
+    .localMainContainer .servicesDiv .service {
+      color: var(--fourth_color);
+      border: 0.5em solid var(--fourth_color);
+      border-radius: 100px;
+      background-color: var(--first_color);
+      text-align: center;
+      padding: 1em;
+      min-width: 10em;
+      min-height: 10em;
+      width: 12.5em;
+      height: 12.5em; }
+      .localMainContainer .servicesDiv .service stroke {
+        display: block;
+        font-size: 2em; }
+      .localMainContainer .servicesDiv .service img {
+        height: 4em;
+        width: 4em; }
 
 /* CSS MENÚ*/
-@media (min-width: 1146px) {
-  .promociones {
-    display: flex;
-    flex-direction: column; } }
-
 .menuMainDiv {
   background: #6f1d1b;
   background: linear-gradient(360deg, #6f1d1b 0%, #432818 31%, #99582a 50%, #432818 72%, #6f1d1b 79%);
@@ -252,34 +262,45 @@ footer {
   height: 100%; }
   .menuMainDiv .promociones {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-    .menuMainDiv .promociones .card {
-      --bs-card-spacer-y: 0em;
-      --bs-card-spacer-x: 0em;
-      position: static;
-      font-weight: bolder;
-      font-size: 1.5em; }
+    flex-direction: column;
+    justify-content: center; }
     .menuMainDiv .promociones .promocionesCafeteria, .menuMainDiv .promociones .promocionesRestaurant {
       display: flex;
       flex-direction: column;
       margin: 2em;
-      width: 100%;
-      justify-content: space-around; }
+      justify-content: space-evenly; }
       .menuMainDiv .promociones .promocionesCafeteria .tituloPromoción, .menuMainDiv .promociones .promocionesRestaurant .tituloPromoción {
         color: #fcfffc; }
-      .menuMainDiv .promociones .promocionesCafeteria .promocion, .menuMainDiv .promociones .promocionesRestaurant .promocion {
-        display: flex;
-        flex-direction: row;
-        border: 3px solid black;
-        background-color: #fcfffc;
-        width: 100%; }
       .menuMainDiv .promociones .promocionesCafeteria .listadoDePromociones, .menuMainDiv .promociones .promocionesRestaurant .listadoDePromociones {
         display: flex;
-        flex-direction: column; }
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly; }
+        .menuMainDiv .promociones .promocionesCafeteria .listadoDePromociones .promocion, .menuMainDiv .promociones .promocionesRestaurant .listadoDePromociones .promocion {
+          display: flex;
+          flex-direction: column;
+          border: 0.5em solid var(--fourth_color);
+          border-radius: 25px;
+          background-color: var(--first_color);
+          text-align: center;
+          align-items: center;
+          padding: 0.5em;
+          max-width: 15em;
+          font-size: 2em; }
+          .menuMainDiv .promociones .promocionesCafeteria .listadoDePromociones .promocion__food, .menuMainDiv .promociones .promocionesRestaurant .listadoDePromociones .promocion__food {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly; }
+            .menuMainDiv .promociones .promocionesCafeteria .listadoDePromociones .promocion__food img, .menuMainDiv .promociones .promocionesRestaurant .listadoDePromociones .promocion__food img {
+              height: 64px;
+              width: 64px; }
   .menuMainDiv .downloadMenuBtnDiv {
-    padding-bottom: 1em; }
+    padding: 2em;
+    display: flex;
+    justify-content: center; }
     .menuMainDiv .downloadMenuBtnDiv .btn_descarga {
+      width: 50%;
       font-size: 2em;
       display: flex;
       background-color: #6f1d1b;
@@ -288,9 +309,17 @@ footer {
       border-radius: 1em;
       padding-bottom: 1em;
       padding-top: 1em;
-      justify-content: center; }
+      justify-content: center;
+      text-decoration: none; }
       .menuMainDiv .downloadMenuBtnDiv .btn_descarga i {
         padding: 0em 1em 0em 1em; }
+  .menuMainDiv .gallery {
+    background-color: var(--first_color);
+    padding: 2em; }
+    .menuMainDiv .gallery img {
+      width: 100%;
+      padding: 1em;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
 
 /* CSS CONTACTO*/
 .contactMainDiv {

@@ -1,10 +1,8 @@
 /* CSS LOCAL*/
 
 .localMainContainer {
-    background-image: url(../img/local_background_image.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
+    @include set-background-for-main-container ("../img/local_background_image.jpg");
+    @include set-display-flex(column);
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -23,9 +21,8 @@
     }
     
     .informationDiv {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--third_color);
+        @include set-display-flex(column);
+        background-color: var(--first_color);
         border-radius: 3em;
         border: 5px solid var(--fourth_color);
         color: var(--fourth_color);
@@ -41,21 +38,41 @@
     }
     
     .servicesDiv {
-        display:flex;
-        flex-direction: column;
-        margin-top:2em;
-        padding: 1em;
-        color: var(--fourth_color);
-        text-align: center;
-        border-radius: 3em;
-        background-color: var(--third_color);
-        border: 5px solid var(--fourth_color);
-        
-        .services {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
+        @include set-display-flex(row);
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top:1.5em;
+
+        .service {
+            color: var(--fourth_color);
+            border: 0.5em solid var(--fourth_color);
+            border-radius: 100px;
+            background-color: var(--first_color);
+            text-align: center;
+            padding: 1em;
+            min-width: 10em;
+            min-height: 10em;
+            width: 12.5em;
+            height: 12.5em;
+
+            stroke {
+                display: block;
+                font-size:2em;
+            }
+    
+            img {
+                height: 4em;
+                width: 4em;
+            }
         }
     }
+
+    // .gallery {
+    //     background-color: var(--first_color);
+    //     padding: 2em;
+
+    //     img {
+    //         width: 100%;
+    //     }
+    // }
 }
