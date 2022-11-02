@@ -26,9 +26,9 @@
 
                 .promocion {
                     @include set-display-flex(column);
+                    background-color: var(--first_color);
                     border: 0.5em solid var(--fourth_color);
                     border-radius: 25px;
-                    background-color: var(--first_color);
                     text-align: center;
                     align-items: center;
                     padding: 0.5em;

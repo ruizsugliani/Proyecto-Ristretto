@@ -1,6 +1,22 @@
 /* MEDIAS */
+@media (max-width: 992px) {
+    html { 
+        font-size: 12px;
+    }
+}
 
 /* MEDIAS HOME PAGE */
+@media(max-width: 992px) {
+    .presentationDiv {
+        strong {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
 
 /* MEDIAS NOSOTROS PAGE */
 @media (max-width:576px) {

@@ -1,49 +1,34 @@
 /* CSS LOCAL*/
+#intro {@extend .homeMainDiv; @extend .presentationDiv;}
 
 .localMainContainer {
+    @extend .homeMainDiv;
     @include set-background-for-main-container ("../img/local_background_image.jpg");
-    @include set-display-flex(column);
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    height: 100%;
-    padding: 2em;
     
-    h3 {
+    strong {
         font-size: 5em;
-        border-bottom: 3px solid var(--fourth_color);
-    }
-    
-    li {
-        font-size: 1.8em;
     }
     
     .informationDiv {
-        @include set-display-flex(column);
-        background-color: var(--first_color);
-        border-radius: 3em;
-        border: 5px solid var(--fourth_color);
-        color: var(--fourth_color);
-        border-top: 3px solid var(--fourth_color);
+        @extend .presentationDiv;
         
         iframe {
             width: 100%;
         }
-        
+
         p {
             font-size: 1.8em;
+            border-top: none;
         }
     }
     
-    .servicesDiv {
+    .localServicesDiv {
         @include set-display-flex(row);
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin-top:1.5em;
 
-        .service {
+        .service-figure-local {
             color: var(--fourth_color);
             border: 0.5em solid var(--fourth_color);
             border-radius: 100px;
@@ -55,7 +40,7 @@
             width: 12.5em;
             height: 12.5em;
 
-            stroke {
+            strong {
                 display: block;
                 font-size:2em;
             }
@@ -66,13 +51,4 @@
             }
         }
     }
-
-    // .gallery {
-    //     background-color: var(--first_color);
-    //     padding: 2em;
-
-    //     img {
-    //         width: 100%;
-    //     }
-    // }
 }

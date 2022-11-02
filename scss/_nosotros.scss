@@ -1,42 +1,21 @@
 /* CSS NOSOTROS*/
+#intro {@extend .homeMainDiv; @extend .presentationDiv;};
 
 .nosotrosMainDiv {
-    @include set-display-flex(column);
-    background-image: url(../img/nosotros_background_image.jpg);
-    background-size: cover;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    pointer-events: none;
-    padding: 2em;
-    
+    @extend .homeMainDiv;
+    @include set-background-for-main-container ("../img/nosotros_background_image.jpg");
     
     .informationAboutUs {
-        @include set-display-flex(column);
-        text-align: center;
-        color: var(--fourth_color);
-        background-color: var(--first_color);
-        border: 5px solid var(--fourth_color);
-        border-radius: 25px;
-        
-        stroke {
-            font-size: 5em;
-        }
-        
-        p {
-            border-top: 3px solid var(--fourth_color);
-            font-size: 3em;
-        }
+        @extend .presentationDiv;
     }
 
-    .stadisticsDiv {
+    .nosotrosServicesDiv {
         @include set-display-flex(row);
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin-top:1.5em;
     
-        .stat {
+        .service-figure-nosotros {
             color: var(--fourth_color);
             border: 0.5em solid var(--fourth_color);
             border-radius: 100px;
@@ -48,7 +27,7 @@
             width: 12.5em;
             height: 12.5em;
 
-            stroke {
+            strong {
                 display: block;
                 font-size:2em;
             }
@@ -60,6 +39,12 @@
         }
     }
 
+    .opinionsDiv {
+        .row {
+            margin-top: 1em;
+        }
+    }
+
     .clientOpinion {
         @include set-display-flex(column);
         color: white;
@@ -67,6 +52,7 @@
         border-radius: 25px;
         background-color: black;
         padding: 1em;
+        min-height: 240px;
 
         span {
             font-size: 2em;
