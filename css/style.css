@@ -178,7 +178,10 @@ footer {
   .localMainContainer strong {
     font-size: 5em; }
   .localMainContainer .informationDiv iframe {
-    width: 100%; }
+    width: 100%;
+    margin-top: 1em; }
+  .localMainContainer .informationDiv strong {
+    border-bottom: 3px solid var(--fourth_color); }
   .localMainContainer .informationDiv p {
     font-size: 1.8em;
     border-top: none; }
