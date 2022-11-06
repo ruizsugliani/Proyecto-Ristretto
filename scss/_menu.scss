@@ -1,8 +1,8 @@
 /* CSS MENÚ*/
 
 .menuMainDiv {
-    background: rgb(111,29,27);
-    background: linear-gradient(360deg, rgba(111,29,27,1) 0%, rgba(67,40,24,1) 31%, rgba(153,88,42,1) 50%, rgba(67,40,24,1) 72%, rgba(111,29,27,1) 79%);
+    background: rgb(255,230,167);
+    background: linear-gradient(355deg, rgba(255,230,167,1) 0%, rgba(187,148,87,1) 46%, rgba(153,88,42,1) 87%);
     text-align: center;
     height: 100%;
     
@@ -16,7 +16,8 @@
             justify-content: space-evenly;
 
             .tituloPromoción {
-                color: #fcfffc;
+                color: var(--fourth_color);
+                font-size: 3em;
             }
             
             .listadoDePromociones {
