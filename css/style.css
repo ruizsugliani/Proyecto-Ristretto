@@ -28,6 +28,13 @@ dl, ol, ul {
 .container_fluid {
   position: static; }
 
+.card {
+  --bs-card-spacer-y: 0em;
+  --bs-card-spacer-x: 0em;
+  position: static;
+  font-weight: bolder;
+  font-size: 1.5em; }
+
 /* CSS DEFAULT POR CADA PÁGINA */
 * {
   margin: 0;
@@ -47,16 +54,6 @@ h1 {
 h2 {
   font-size: 3em; }
 
-.animate__animated {
-  position: sticky; }
-
-.card {
-  --bs-card-spacer-y: 0em;
-  --bs-card-spacer-x: 0em;
-  position: static;
-  font-weight: bolder;
-  font-size: 1.5em; }
-
 header {
   display: flex;
   flex-direction: row;
@@ -70,19 +67,16 @@ header {
 
 nav {
   background-color: var(--second_color);
-  position: sticky;
-  top: 0; }
-  nav .nav__menu {
-    list-style-type: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    padding: 1rem; }
-    nav .nav__menu .btn {
-      font-size: 2em; }
-      nav .nav__menu .btn a {
-        color: var(--fourth_color);
-        text-decoration: none; }
+  position: sticky; }
+  nav .navbar-nav .nav-link.active {
+    color: var(--fourth_color);
+    border: 1px solid var(--fourth_color);
+    border-radius: 25px; }
+  nav .btn {
+    font-size: 2em; }
+    nav .btn a {
+      color: var(--fourth_color);
+      text-decoration: none; }
 
 footer {
   display: flex;
@@ -91,8 +85,7 @@ footer {
   background-color: var(--first_color);
   text-align: center;
   justify-content: center;
-  width: 100%;
-  bottom: 0; }
+  align-items: center; }
   footer strong {
     font-size: 2.5em; }
   footer ul {
@@ -103,15 +96,15 @@ footer {
   footer p {
     font-size: 1.5em;
     font-weight: normal; }
+  footer a {
+    text-decoration: none;
+    color: var(--fourth_color); }
   footer .btn_social {
     font-size: 3.125em;
-    padding: 0.625rem; }
-    footer .btn_social a {
-      text-decoration: none;
-      color: var(--fourth_color); }
+    padding: 0.25em; }
 
 /* CSS HOME */
-.homeMainDiv {
+.homeMainDiv, #intro, .nosotrosMainDiv, .localMainContainer {
   background-image: url("../img/home_background_image.jpg");
   background-size: cover;
   display: flex;
@@ -119,37 +112,7 @@ footer {
   justify-content: center;
   pointer-events: none;
   padding: 1em; }
-  .homeMainDiv .presentationDiv {
-    display: flex;
-    flex-direction: column;
-    color: var(--fourth_color);
-    background-color: var(--first_color);
-    border: 5px solid var(--fourth_color);
-    border-radius: 25px;
-    text-align: center; }
-    .homeMainDiv .presentationDiv .welcomeTitle {
-      font-size: 5em; }
-    .homeMainDiv .presentationDiv p {
-      font-size: 3em;
-      font-weight: normal;
-      border-top: 0.1em solid var(--fourth_color);
-      border-bottom: 0.1em solid var(--fourth_color); }
-    .homeMainDiv .presentationDiv strong {
-      font-size: 3em; }
-
-/* CSS NOSOTROS*/
-.nosotrosMainDiv {
-  display: flex;
-  flex-direction: column;
-  background-image: url(../img/nosotros_background_image.jpg);
-  background-size: cover;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  pointer-events: none;
-  padding: 2em; }
-  .nosotrosMainDiv .informationAboutUs {
+  .homeMainDiv .presentationDiv, #intro .presentationDiv, .nosotrosMainDiv .presentationDiv, .localMainContainer .presentationDiv, .homeMainDiv #intro, #intro #intro, .nosotrosMainDiv #intro, .localMainContainer #intro, #intro .nosotrosMainDiv .informationAboutUs, .nosotrosMainDiv #intro .informationAboutUs, .nosotrosMainDiv .informationAboutUs, #intro .localMainContainer .informationDiv, .localMainContainer #intro .informationDiv, .localMainContainer .informationDiv {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -157,18 +120,23 @@ footer {
     background-color: var(--first_color);
     border: 5px solid var(--fourth_color);
     border-radius: 25px; }
-    .nosotrosMainDiv .informationAboutUs stroke {
+    .homeMainDiv .presentationDiv strong, #intro .presentationDiv strong, .nosotrosMainDiv .presentationDiv strong, .localMainContainer .presentationDiv strong, .homeMainDiv #intro strong, #intro #intro strong, .nosotrosMainDiv #intro strong, .localMainContainer #intro strong, #intro .nosotrosMainDiv .informationAboutUs strong, .nosotrosMainDiv .informationAboutUs strong, #intro .localMainContainer .informationDiv strong, .localMainContainer .informationDiv strong {
       font-size: 5em; }
-    .nosotrosMainDiv .informationAboutUs p {
+    .homeMainDiv .presentationDiv p, #intro .presentationDiv p, .nosotrosMainDiv .presentationDiv p, .localMainContainer .presentationDiv p, .homeMainDiv #intro p, #intro #intro p, .nosotrosMainDiv #intro p, .localMainContainer #intro p, #intro .nosotrosMainDiv .informationAboutUs p, .nosotrosMainDiv .informationAboutUs p, #intro .localMainContainer .informationDiv p, .localMainContainer .informationDiv p {
       border-top: 3px solid var(--fourth_color);
       font-size: 3em; }
-  .nosotrosMainDiv .stadisticsDiv {
+
+/* CSS NOSOTROS*/
+.nosotrosMainDiv {
+  background-image: url("../img/nosotros_background_image.jpg");
+  background-size: cover; }
+  .nosotrosMainDiv .nosotrosServicesDiv {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 1.5em; }
-    .nosotrosMainDiv .stadisticsDiv .stat {
+    .nosotrosMainDiv .nosotrosServicesDiv .service-figure-nosotros {
       color: var(--fourth_color);
       border: 0.5em solid var(--fourth_color);
       border-radius: 100px;
@@ -179,12 +147,14 @@ footer {
       min-height: 10em;
       width: 12.5em;
       height: 12.5em; }
-      .nosotrosMainDiv .stadisticsDiv .stat stroke {
+      .nosotrosMainDiv .nosotrosServicesDiv .service-figure-nosotros strong {
         display: block;
         font-size: 2em; }
-      .nosotrosMainDiv .stadisticsDiv .stat img {
+      .nosotrosMainDiv .nosotrosServicesDiv .service-figure-nosotros img {
         height: 4em;
         width: 4em; }
+  .nosotrosMainDiv .opinionsDiv .row {
+    margin-top: 1em; }
   .nosotrosMainDiv .clientOpinion {
     display: flex;
     flex-direction: column;
@@ -192,7 +162,8 @@ footer {
     border: 0.2em solid var(--third_color);
     border-radius: 25px;
     background-color: black;
-    padding: 1em; }
+    padding: 1em;
+    min-height: 240px; }
     .nosotrosMainDiv .clientOpinion span {
       font-size: 2em; }
     .nosotrosMainDiv .clientOpinion .stars {
@@ -203,40 +174,24 @@ footer {
 /* CSS LOCAL*/
 .localMainContainer {
   background-image: url("../img/local_background_image.jpg");
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  height: 100%;
-  padding: 2em; }
-  .localMainContainer h3 {
-    font-size: 5em;
+  background-size: cover; }
+  .localMainContainer strong {
+    font-size: 5em; }
+  .localMainContainer .informationDiv iframe {
+    width: 100%;
+    margin-top: 1em; }
+  .localMainContainer .informationDiv strong {
     border-bottom: 3px solid var(--fourth_color); }
-  .localMainContainer li {
-    font-size: 1.8em; }
-  .localMainContainer .informationDiv {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--first_color);
-    border-radius: 3em;
-    border: 5px solid var(--fourth_color);
-    color: var(--fourth_color);
-    border-top: 3px solid var(--fourth_color); }
-    .localMainContainer .informationDiv iframe {
-      width: 100%; }
-    .localMainContainer .informationDiv p {
-      font-size: 1.8em; }
-  .localMainContainer .servicesDiv {
+  .localMainContainer .informationDiv p {
+    font-size: 1.8em;
+    border-top: none; }
+  .localMainContainer .localServicesDiv {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 1.5em; }
-    .localMainContainer .servicesDiv .service {
+    .localMainContainer .localServicesDiv .service-figure-local {
       color: var(--fourth_color);
       border: 0.5em solid var(--fourth_color);
       border-radius: 100px;
@@ -247,10 +202,10 @@ footer {
       min-height: 10em;
       width: 12.5em;
       height: 12.5em; }
-      .localMainContainer .servicesDiv .service stroke {
+      .localMainContainer .localServicesDiv .service-figure-local strong {
         display: block;
         font-size: 2em; }
-      .localMainContainer .servicesDiv .service img {
+      .localMainContainer .localServicesDiv .service-figure-local img {
         height: 4em;
         width: 4em; }
 
@@ -279,9 +234,9 @@ footer {
         .menuMainDiv .promociones .promocionesCafeteria .listadoDePromociones .promocion, .menuMainDiv .promociones .promocionesRestaurant .listadoDePromociones .promocion {
           display: flex;
           flex-direction: column;
+          background-color: var(--first_color);
           border: 0.5em solid var(--fourth_color);
           border-radius: 25px;
-          background-color: var(--first_color);
           text-align: center;
           align-items: center;
           padding: 0.5em;

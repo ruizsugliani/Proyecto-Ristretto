@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Bienvenido a la página de inicio de Ristretto Café Resto, aquí podrás encontrar información sobre nuestro local y los platos que ofrecemos.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="RISTRETTO, CAFÉ, RESTAURANT, RESTO, BAR, ALMUERZOS, CENAS, MERIENDAS, DESAYUNOS, MEDIALUNAS, TOSTADOS">
+    <meta name="keywords" content="RISTRETTO, RISTRETTO CAFE, RISTRETTO CAFE RESTO, RESTO, BAR, ALMUERZOS, CENAS, MERIENDAS, DESAYUNOS, MEDIALUNAS, TOSTADOS">
     <title>Ristretto Café | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link class="icon" rel="shortcut icon" href="img/RistrettoLogo.ico">
@@ -19,49 +19,56 @@
 <body>
     
     <header>
-        <img class="header__logo animate__animated animate__fadeIn" src="img/Logo.png" alt="Logo Ristretto">
+        <img class="header__logo animate__animated animate__fadeIn" src="./img/Logo.png" alt="Logo Ristretto">
         <h1 class="header__h1 animate__animated animate__fadeIn">Ristretto Café Resto</h1>
-        <img class="header__logo animate__animated animate__fadeIn" src="img/Logo.png" alt="Logo Ristretto">
+        <img class="header__logo animate__animated animate__fadeIn" src="./img/Logo.png" alt="Logo Ristretto">
     </header>
 
-    <nav>
-        <ul class="nav__menu">
-            <li class="btn animate__animated animate__fadeIn">
-                <a href="index.html">
-                    <i class="fa-solid fa-house"></i>
-                    Home
-                </a>
-            </li>
-            <li class="btn animate__animated animate__fadeIn">
-                <a href="nosotros.html">
-                    <i class="fa-solid fa-user"></i>
-                    Nosotros
-                </a>
-            </li>
-            <li class="btn animate__animated animate__fadeIn">
-                <a href="local.html">
-                    <i class="fa-solid fa-shop"></i>
-                    Local
-                </a>
-            </li>
-            <li class="btn animate__animated animate__fadeIn">
-                <a href="menu.html">
-                    <i class="fa-solid fa-mug-hot"></i>
-                    Menú
-                </a>
-            </li>
-            <li class="btn animate__animated animate__fadeIn">
-                <a href="contacto.html">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    Contacto
-                </a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid justify-content-end">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__menu mx-auto">
+                    <li class="btn animate__animated animate__fadeIn nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="btn animate__animated animate__fadeIn nav-item">
+                        <a class="nav-link" href="./nosotros.html">
+                            <i class="fa-solid fa-user"></i>
+                            Nosotros
+                        </a>
+                    </li>
+                    <li class="btn animate__animated animate__fadeIn nav-item">
+                        <a class="nav-link" href="./local.html">
+                            <i class="fa-solid fa-shop"></i>
+                            Local
+                        </a>
+                    </li>
+                    <li class="btn animate__animated animate__fadeIn nav-item">
+                        <a class="nav-link" href="./menu.html">
+                            <i class="fa-solid fa-mug-hot"></i>
+                            Menú
+                        </a>
+                    </li>
+                    <li class="btn animate__animated animate__fadeIn nav-item">
+                        <a class="nav-link" href="./contacto.html">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <div class="homeMainDiv container_fluid">
-        <div class="presentationDiv">
-            <strong class="welcomeTitle">Te damos la bienvenida a nuestro sitio web</strong>
+        <div class="presentationDiv container-sm container-md container-lg container-xl">
+            <strong>Te damos la bienvenida a nuestro sitio web</strong>
             <p>
                 En esta página podrás encontrar imágenes e información sobre nosotros, 
                 nuestro local y nuestro servicio. Además ofrecemos imágenes de
@@ -69,8 +76,8 @@
                 También te invitamos a contactarte con nosotros con el objetivo
                 de mejorar nuestro servicio y resolver inquietudes, todos sus 
                 comentarios serán bien recibidos! Recordá que si te encanta el buen cafe y la buena comida, sos uno de nosotros!
+                <br>Atentamente, el personal de Ristretto.
             </p>
-            <strong>Atentamente, el personal de Ristretto.</strong>
         </div>
     </div>
 
@@ -92,8 +99,14 @@
             &copy; Todos los derechos reservados
         </p>  
         <p>
-            Made with <g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
-                <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"></g-emoji> by Santiago Nahuel Ruiz Sugliani
+            Made with 
+            <g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
+                <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
+            </g-emoji>
+             by 
+            <a href="https://www.linkedin.com/in/santiago-nahuel-ruiz-sugliani-a2bb441b8/" target="_blank">
+                    Santiago Nahuel Ruiz Sugliani
+            </a>
         </p>
     </footer>
 

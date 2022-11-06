@@ -2,32 +2,25 @@
 
 .homeMainDiv {
     @include set-background-for-main-container ("../img/home_background_image.jpg");
-    display: flex;
-    flex-direction: column;
+    @include set-display-flex(column);
     justify-content: center;
     pointer-events: none;
     padding: 1em;
     
     .presentationDiv {
         @include set-display-flex(column);
+        text-align: center;
         color: var(--fourth_color);
         background-color: var(--first_color);
         border: 5px solid var(--fourth_color);
         border-radius: 25px;
-        text-align: center;
         
-        .welcomeTitle {
+        strong {
             font-size: 5em;
         }
         
         p {
-            font-size: 3em;
-            font-weight: normal;
-            border-top: 0.1em solid var(--fourth_color);
-            border-bottom: 0.1em solid var(--fourth_color);
-        }
-        
-        strong {
+            border-top: 3px solid var(--fourth_color);
             font-size: 3em;
         }
     }

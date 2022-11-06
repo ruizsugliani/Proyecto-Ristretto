@@ -32,3 +32,11 @@ dl, ol, ul {
 .container_fluid {
     position: static;
 }
+
+.card{
+    --bs-card-spacer-y: 0em;
+    --bs-card-spacer-x: 0em;
+    position: static;
+    font-weight: bolder;
+    font-size:1.5em
+}
