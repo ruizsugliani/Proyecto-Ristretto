@@ -1,30 +1,5 @@
 footer {
-    @include set-display-flex(column);
-    color: var(--fourth_color);
     background-color: var(--first_color);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    
-    strong {
-        font-size: 2.5em;
-    }
-
-    ul {
-        list-style-type: none;
-        @include set-display-flex(row);
-        justify-content: center;
-    }
-    
-    p {
-        font-size: 1.5em;
-        font-weight: normal;
-    }
-    
-    a {
-        text-decoration: none;
-        color: var(--fourth_color);
-    }
     
     .btn_social {
         font-size: 3.125em;

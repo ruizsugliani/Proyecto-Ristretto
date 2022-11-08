@@ -10,17 +10,12 @@
     }
 
     .nosotrosServicesDiv {
-        @include set-display-flex(row);
-        flex-wrap: wrap;
-        justify-content: space-evenly;
         margin-top:1.5em;
     
         .service-figure-nosotros {
             color: var(--fourth_color);
             border: 0.5em solid var(--fourth_color);
-            border-radius: 100px;
             background-color: var(--first_color);
-            text-align: center;
             padding: 1em;
             min-width: 10em;
             min-height: 10em;
@@ -28,7 +23,6 @@
             height: 12.5em;
 
             strong {
-                display: block;
                 font-size:2em;
             }
     
@@ -46,10 +40,8 @@
     }
 
     .clientOpinion {
-        @include set-display-flex(column);
         color: white;
         border: 0.2em solid var(--third_color);
-        border-radius: 25px;
         background-color: black;
         padding: 1em;
         min-height: 240px;

@@ -21,6 +21,27 @@
   --sp-sm: 1.6rem;
   --sp-xs: 0.8rem; }
 
+.a-font-color {
+  color: var(--fourth_color); }
+
+/* CSS DEFAULT POR CADA PÁGINA */
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none; }
+
+body {
+  font-family: 'Ms Madi', cursive;
+  font-size: 16px;
+  text-align: center;
+  color: var(--fourth_color); }
+  body strong {
+    font-size: 2.5em; }
+  body ul {
+    list-style-type: none; }
+  body p {
+    font-size: 1.5em; }
+
 /* BOOTSTRAP */
 dl, ol, ul {
   margin-bottom: 0; }
@@ -35,71 +56,29 @@ dl, ol, ul {
   font-weight: bolder;
   font-size: 1.5em; }
 
-/* CSS DEFAULT POR CADA PÁGINA */
-* {
-  margin: 0;
-  padding: 0;
-  user-select: none; }
-
-body {
-  font-family: 'Ms Madi', cursive;
-  font-weight: bold;
-  font-size: 16px;
-  list-style-type: none;
-  user-select: none; }
-
-h1 {
-  color: var(--fourth_color);
-  font-size: 3.75em; }
-
-h2 {
-  font-size: 3em; }
-
 header {
-  display: flex;
-  flex-direction: row;
-  background-color: var(--first_color);
-  text-align: center;
-  justify-content: center;
-  align-items: center; }
+  background-color: var(--first_color); }
+  header .header__h1 {
+    font-size: 2.5rem; }
   header .header__logo {
     height: 6.25rem;
-    width: 6.25rem; }
+    width: 6.25rem;
+    min-width: 5.5rem;
+    min-height: 5.5rem; }
 
 nav {
   background-color: var(--second_color);
   position: sticky; }
   nav .navbar-nav .nav-link.active {
-    color: var(--fourth_color);
     border: 1px solid var(--fourth_color);
-    border-radius: 25px; }
+    color: var(--fourth_color); }
+  nav .navbar-nav .nav-link:hover {
+    background-color: var(--third_color); }
   nav .btn {
     font-size: 2em; }
-    nav .btn a {
-      color: var(--fourth_color);
-      text-decoration: none; }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  color: var(--fourth_color);
-  background-color: var(--first_color);
-  text-align: center;
-  justify-content: center;
-  align-items: center; }
-  footer strong {
-    font-size: 2.5em; }
-  footer ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-  footer p {
-    font-size: 1.5em;
-    font-weight: normal; }
-  footer a {
-    text-decoration: none;
-    color: var(--fourth_color); }
+  background-color: var(--first_color); }
   footer .btn_social {
     font-size: 3.125em;
     padding: 0.25em; }
@@ -108,19 +87,11 @@ footer {
 .homeMainDiv, #intro, .nosotrosMainDiv, .localMainContainer {
   background-image: url("../img/home_background_image.jpg");
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   pointer-events: none;
   padding: 1em; }
   .homeMainDiv .presentationDiv, #intro .presentationDiv, .nosotrosMainDiv .presentationDiv, .localMainContainer .presentationDiv, .homeMainDiv #intro, #intro #intro, .nosotrosMainDiv #intro, .localMainContainer #intro, #intro .nosotrosMainDiv .informationAboutUs, .nosotrosMainDiv #intro .informationAboutUs, .nosotrosMainDiv .informationAboutUs, #intro .localMainContainer .informationDiv, .localMainContainer #intro .informationDiv, .localMainContainer .informationDiv {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: var(--fourth_color);
     background-color: var(--first_color);
-    border: 5px solid var(--fourth_color);
-    border-radius: 25px; }
+    border: 5px solid var(--fourth_color); }
     .homeMainDiv .presentationDiv strong, #intro .presentationDiv strong, .nosotrosMainDiv .presentationDiv strong, .localMainContainer .presentationDiv strong, .homeMainDiv #intro strong, #intro #intro strong, .nosotrosMainDiv #intro strong, .localMainContainer #intro strong, #intro .nosotrosMainDiv .informationAboutUs strong, .nosotrosMainDiv .informationAboutUs strong, #intro .localMainContainer .informationDiv strong, .localMainContainer .informationDiv strong {
       font-size: 5em; }
     .homeMainDiv .presentationDiv p, #intro .presentationDiv p, .nosotrosMainDiv .presentationDiv p, .localMainContainer .presentationDiv p, .homeMainDiv #intro p, #intro #intro p, .nosotrosMainDiv #intro p, .localMainContainer #intro p, #intro .nosotrosMainDiv .informationAboutUs p, .nosotrosMainDiv .informationAboutUs p, #intro .localMainContainer .informationDiv p, .localMainContainer .informationDiv p {
@@ -132,24 +103,17 @@ footer {
   background-image: url("../img/nosotros_background_image.jpg");
   background-size: cover; }
   .nosotrosMainDiv .nosotrosServicesDiv {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     margin-top: 1.5em; }
     .nosotrosMainDiv .nosotrosServicesDiv .service-figure-nosotros {
       color: var(--fourth_color);
       border: 0.5em solid var(--fourth_color);
-      border-radius: 100px;
       background-color: var(--first_color);
-      text-align: center;
       padding: 1em;
       min-width: 10em;
       min-height: 10em;
       width: 12.5em;
       height: 12.5em; }
       .nosotrosMainDiv .nosotrosServicesDiv .service-figure-nosotros strong {
-        display: block;
         font-size: 2em; }
       .nosotrosMainDiv .nosotrosServicesDiv .service-figure-nosotros img {
         height: 4em;
@@ -157,11 +121,8 @@ footer {
   .nosotrosMainDiv .opinionsDiv .row {
     margin-top: 1em; }
   .nosotrosMainDiv .clientOpinion {
-    display: flex;
-    flex-direction: column;
     color: white;
     border: 0.2em solid var(--third_color);
-    border-radius: 25px;
     background-color: black;
     padding: 1em;
     min-height: 240px; }
@@ -187,17 +148,11 @@ footer {
     font-size: 1.8em;
     border-top: none; }
   .localMainContainer .localServicesDiv {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     margin-top: 1.5em; }
     .localMainContainer .localServicesDiv .service-figure-local {
       color: var(--fourth_color);
       border: 0.5em solid var(--fourth_color);
-      border-radius: 100px;
       background-color: var(--first_color);
-      text-align: center;
       padding: 1em;
       min-width: 10em;
       min-height: 10em;
@@ -213,65 +168,35 @@ footer {
 /* CSS MENÚ*/
 .menuMainDiv {
   background: #ffe6a7;
-  background: linear-gradient(355deg, #ffe6a7 0%, #bb9457 46%, #99582a 87%);
-  text-align: center;
-  height: 100%; }
-  .menuMainDiv .promociones {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .menuMainDiv .promociones .promocionesCafeteria, .menuMainDiv .promociones .promocionesRestaurant {
-      display: flex;
-      flex-direction: column;
-      margin: 2em;
-      justify-content: space-evenly; }
-      .menuMainDiv .promociones .promocionesCafeteria .tituloPromoción, .menuMainDiv .promociones .promocionesRestaurant .tituloPromoción {
-        color: var(--fourth_color);
-        font-size: 3em; }
-      .menuMainDiv .promociones .promocionesCafeteria .listadoDePromociones, .menuMainDiv .promociones .promocionesRestaurant .listadoDePromociones {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly; }
-        .menuMainDiv .promociones .promocionesCafeteria .listadoDePromociones .promocion, .menuMainDiv .promociones .promocionesRestaurant .listadoDePromociones .promocion {
-          display: flex;
-          flex-direction: column;
-          background-color: var(--first_color);
-          border: 0.5em solid var(--fourth_color);
-          border-radius: 25px;
-          text-align: center;
-          align-items: center;
-          padding: 0.5em;
-          max-width: 12em;
-          font-size: 2em; }
-          .menuMainDiv .promociones .promocionesCafeteria .listadoDePromociones .promocion__food, .menuMainDiv .promociones .promocionesRestaurant .listadoDePromociones .promocion__food {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly; }
-            .menuMainDiv .promociones .promocionesCafeteria .listadoDePromociones .promocion__food img, .menuMainDiv .promociones .promocionesRestaurant .listadoDePromociones .promocion__food img {
-              height: 64px;
-              width: 64px; }
+  background: linear-gradient(355deg, #ffe6a7 0%, #bb9457 46%, #99582a 87%); }
+  .menuMainDiv .promociones .promocionesDisponibles {
+    margin: 2em; }
+    .menuMainDiv .promociones .promocionesDisponibles .tituloPromoción {
+      color: var(--fourth_color);
+      font-size: 3em; }
+    .menuMainDiv .promociones .promocionesDisponibles .listadoDePromociones .promocion {
+      background-color: var(--first_color);
+      border: 5px solid var(--fourth_color);
+      padding: 0.5em;
+      max-width: 12em;
+      font-size: 2em; }
+      .menuMainDiv .promociones .promocionesDisponibles .listadoDePromociones .promocion__food img {
+        height: 64px;
+        width: 64px; }
+      .menuMainDiv .promociones .promocionesDisponibles .listadoDePromociones .promocion strong {
+        font-size: 1em; }
   .menuMainDiv .downloadMenuBtnDiv {
-    padding: 2em;
-    display: flex;
-    justify-content: center; }
+    padding: 2em; }
     .menuMainDiv .downloadMenuBtnDiv .btn_descarga {
       width: 50%;
       font-size: 2em;
-      display: flex;
       background-color: #6f1d1b;
       color: var(--first_color);
       border: 3px solid var(--first_color);
-      border-radius: 1em;
-      padding-bottom: 1em;
-      padding-top: 1em;
-      justify-content: center;
       text-decoration: none; }
       .menuMainDiv .downloadMenuBtnDiv .btn_descarga i {
         padding: 0em 1em 0em 1em; }
   .menuMainDiv .gallery {
-    background-color: var(--first_color);
     padding: 2em; }
     .menuMainDiv .gallery img {
       width: 100%;
@@ -283,14 +208,11 @@ footer {
   color: var(--first_color);
   background-image: url(../img/contacto_background_image.jpg);
   background-size: cover;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 2em; }
   .contactMainDiv label {
     font-size: 3em;
     padding-top: 1rem;
-    font-weight: bold;
     user-select: none; }
   .contactMainDiv input {
     font-size: 3em;
@@ -312,21 +234,21 @@ footer {
 /* MEDIAS HOME PAGE */
 @media (max-width: 576px) {
   .presentationDiv strong, #intro strong, .nosotrosMainDiv .informationAboutUs strong, .localMainContainer .informationDiv strong {
-    font-size: 1rem; }
+    font-size: 16px; }
   .presentationDiv p, #intro p, .nosotrosMainDiv .informationAboutUs p, .localMainContainer .informationDiv p {
-    font-size: .5rem; } }
+    font-size: 8px; } }
 
 @media (max-width: 768px) {
   .presentationDiv strong, #intro strong, .nosotrosMainDiv .informationAboutUs strong, .localMainContainer .informationDiv strong {
-    font-size: 2rem; }
+    font-size: 32px; }
   .presentationDiv p, #intro p, .nosotrosMainDiv .informationAboutUs p, .localMainContainer .informationDiv p {
-    font-size: 1rem; } }
+    font-size: 16px; } }
 
 @media (max-width: 992px) {
   .presentationDiv strong, #intro strong, .nosotrosMainDiv .informationAboutUs strong, .localMainContainer .informationDiv strong {
-    font-size: 2.5em; }
+    font-size: 48px; }
   .presentationDiv p, #intro p, .nosotrosMainDiv .informationAboutUs p, .localMainContainer .informationDiv p {
-    font-size: .2em; } }
+    font-size: 32px; } }
 
 /* MEDIAS NOSOTROS PAGE */
 @media (max-width: 576px) {

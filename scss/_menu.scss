@@ -3,17 +3,11 @@
 .menuMainDiv {
     background: rgb(255,230,167);
     background: linear-gradient(355deg, rgba(255,230,167,1) 0%, rgba(187,148,87,1) 46%, rgba(153,88,42,1) 87%);
-    text-align: center;
-    height: 100%;
     
     .promociones {
-        @include set-display-flex(column);
-        justify-content: center;
     
-        .promocionesCafeteria {
-            @include set-display-flex(column);
+        .promocionesDisponibles {
             margin: 2em;
-            justify-content: space-evenly;
 
             .tituloPromoción {
                 color: var(--fourth_color);
@@ -21,58 +15,39 @@
             }
             
             .listadoDePromociones {
-                @include set-display-flex(row);
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-
                 .promocion {
-                    @include set-display-flex(column);
                     background-color: var(--first_color);
-                    border: 0.5em solid var(--fourth_color);
-                    border-radius: 25px;
-                    text-align: center;
-                    align-items: center;
+                    border: 5px solid var(--fourth_color);
                     padding: 0.5em;
                     max-width: 12em;
                     font-size: 2em;
     
                     &__food {
-                        @include set-display-flex(row);
-                        flex-wrap: wrap;
-                        justify-content:space-evenly;
-    
                         img {
                             height:64px;
                             width:64px;
                         }
+                    }
+
+                    strong {
+                        font-size: 1em;
                     }
                 }
             }
 
 
         }
-        
-        .promocionesRestaurant {
-            @extend .promocionesCafeteria;
-        }
     }
     
     .downloadMenuBtnDiv {
         padding: 2em;
-        display:flex;
-        justify-content: center;
 
         .btn_descarga {
             width: 50%;
             font-size: 2em;
-            display: flex;
             background-color: #6f1d1b;
             color: var(--first_color);
             border: 3px solid var(--first_color);
-            border-radius: 1em;
-            padding-bottom: 1em;
-            padding-top: 1em;
-            justify-content: center;
             text-decoration: none;
                 
             i {
@@ -83,7 +58,6 @@
     }
 
     .gallery {
-        background-color: var(--first_color);
         padding: 2em;
 
         img {

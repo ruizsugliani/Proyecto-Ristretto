@@ -18,63 +18,64 @@
 </head>
 <body>
     
-    <header class="headerContainer">
-        <img class="header__logo animate__animated animate__fadeIn" src="img/Logo.png" alt="Logo Ristretto">
-        <h1 class="header__h1 animate__animated animate__fadeIn">Ristretto Café Resto</h1>
-        <img class="header__logo animate__animated animate__fadeIn" src="img/Logo.png" alt="Logo Ristretto">
+    <header class="d-flex flex-nowrap flex-row align-items-center justify-content-center">
+        <img class="header__logo animate__animated animate__fadeIn" src="./img/Logo.png" alt="Logo Ristretto">
+        <h1 class="header__h1 animate__animated animate__fadeIn fw-bold">Ristretto Café Resto</h1>
+        <img class="header__logo animate__animated animate__fadeIn" src="./img/Logo.png" alt="Logo Ristretto">
     </header>
 
-    <div class="menuMainDiv">
-        <nav class="navbar navbar-expand-lg sticky-top">
-            <div class="container-fluid justify-content-end">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__menu mx-auto">
-                        <li class="btn animate__animated animate__fadeIn nav-item">
-                            <a class="nav-link" aria-current="page" href="./index.html">
-                                <i class="fa-solid fa-house"></i>
-                                Home
-                            </a>
-                        </li>
-                        <li class="btn animate__animated animate__fadeIn nav-item">
-                            <a class="nav-link" href="./nosotros.html">
-                                <i class="fa-solid fa-user"></i>
-                                Nosotros
-                            </a>
-                        </li>
-                        <li class="btn animate__animated animate__fadeIn nav-item">
-                            <a class="nav-link" href="./local.html">
-                                <i class="fa-solid fa-shop"></i>
-                                Local
-                            </a>
-                        </li>
-                        <li class="btn animate__animated animate__fadeIn nav-item">
-                            <a class="nav-link active" href="./menu.html">
-                                <i class="fa-solid fa-mug-hot"></i>
-                                Menú
-                            </a>
-                        </li>
-                        <li class="btn animate__animated animate__fadeIn nav-item">
-                            <a class="nav-link" href="./contacto.html">
-                                <i class="fa-solid fa-paper-plane"></i>
-                                Contacto
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid justify-content-end">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__menu mx-auto">
+                    <li class="btn animate__animated animate__fadeIn nav-item">
+                        <a class="nav-link rounded fw-bold text-decoration-none a-font-color" aria-current="page" href="./index.html">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="btn animate__animated animate__fadeIn nav-item">
+                        <a class="nav-link rounded fw-bold text-decoration-none a-font-color" href="./nosotros.html">
+                            <i class="fa-solid fa-user"></i>
+                            Nosotros
+                        </a>
+                    </li>
+                    <li class="btn animate__animated animate__fadeIn nav-item">
+                        <a class="nav-link rounded fw-bold text-decoration-none a-font-color" href="./local.html">
+                            <i class="fa-solid fa-shop"></i>
+                            Local
+                        </a>
+                    </li>
+                    <li class="btn animate__animated animate__fadeIn nav-item">
+                        <a class="nav-link active rounded fw-bold text-decoration-none a-font-color" href="./menu.html">
+                            <i class="fa-solid fa-mug-hot"></i>
+                            Menú
+                        </a>
+                    </li>
+                    <li class="btn animate__animated animate__fadeIn nav-item">
+                        <a class="nav-link rounded fw-bold text-decoration-none a-font-color" href="./contacto.html">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <div class="promociones">
-            <div class="promocionesCafeteria">
+    <div class="menuMainDiv">
+
+        <div class="promociones d-flex flex-column">
+            <div class="promocionesDisponibles d-flex flex-column justify-content-evenly">
                 <strong class="tituloPromoción">Promociones de la Cafetería</strong>
-                <div class="listadoDePromociones">
+                <div class="listadoDePromociones d-flex flex-row flex-wrap justify-content-evenly">
                     
-                    <figure class="figure promocion">
+                    <figure class="figure promocion d-flex flex-column rounded-5 align-center">
                         <strong>Cafe o Te c/ Leche , Ensalada de Frutas, Yogurt, Cereales</strong>
-                        <div class="promocion__food container">
+                        <div class="promocion__food d-flex flex-row flex-wrap justify-content-evenly container">
                             <img src="./img/coffee-ByGoodWare.png" class="figure-img img-fluid rounded" alt="Coffee Icon By GoodWare">
                             <img src="./img/fruit-salad-ByFreepik.png" class="figure-img img-fluid rounded" alt="Fruit Salad Icon By Freepik">
                             <img src="./img/yogur-ByFreepik.png" class="figure-img img-fluid rounded" alt="Yogur Icon By Freepik">
@@ -82,26 +83,26 @@
                         </div>
                     </figure>
 
-                    <figure class="figure promocion">
+                    <figure class="figure promocion d-flex flex-column rounded-5 align-center">
                         <strong>Cafe Americano + Brownie/Alfajor</strong>
-                        <div class="promocion__food container">
+                        <div class="promocion__food d-flex flex-row flex-wrap justify-content-evenly container">
                             <img src="./img/coffee-ByGoodWare.png" class="figure-img img-fluid rounded" alt="Coffee Icon By GoodWare">
                             <img src="./img/brownie-ByUmeicon.png" class="figure-img img-fluid rounded" alt="Brownie Icon By Umeicon">
                             <img src="./img/alfajor-ByFreepik.png" class="figure-img img-fluid rounded" alt="Alfajor Icon By Freepik">
                         </div>
                     </figure>
 
-                    <figure class="figure promocion">
+                    <figure class="figure promocion d-flex flex-column rounded-5 align-center">
                         <strong>Cafe o Te c/ Leche + Porción de Torta</strong>
-                        <div class="promocion__food container">
+                        <div class="promocion__food d-flex flex-row flex-wrap justify-content-evenly container">
                             <img src="./img/coffee-ByGoodWare.png" class="figure-img img-fluid rounded" alt="Coffee Icon By GoodWare">
                             <img src="./img/cake-ByFreepik.png" class="figure-img img-fluid rounded" alt="Cake Icon By Freepik">
                         </div>
                     </figure>
 
-                    <figure class="figure promocion">
+                    <figure class="figure promocion d-flex flex-column rounded-5 align-center">
                         <strong>Jugo de Naranja Grande + Tostado Mixto</strong>
-                        <div class="promocion__food container">
+                        <div class="promocion__food d-flex flex-row flex-wrap justify-content-evenly container">
                             <img src="./img/orange-juice-ByFreepik.png" class="figure-img img-fluid rounded" alt="Orange Juice Icon By Freepik">
                             <img src="./img/sandwich-ByFreepik.png" class="figure-img img-fluid rounded" alt="Sandwich Icon By Freepik">
                         </div>
@@ -110,21 +111,21 @@
                 </div>
             </div>
     
-            <div class="promocionesRestaurant">
+            <div class="promocionesDisponibles d-flex flex-column flex-wrap justify-content-evenly">
                 <strong class="tituloPromoción">Promociones del Restaurant</strong>
-                <div class="listadoDePromociones">
+                <div class="listadoDePromociones  d-flex flex-row flex-wrap justify-content-evenly">
 
-                    <figure class="figure promocion">
+                    <figure class="figure promocion d-flex flex-column rounded-5 align-center">
                         <strong>Pizza Grande de Muzzarella + 1 Porron Quilmes</strong>
-                        <div class="promocion__food container">
+                        <div class="promocion__food d-flex flex-row flex-wrap justify-content-evenly container">
                             <img src="./img/pizza-ByFreepik.png" class="figure-img img-fluid rounded" alt="Pizza Icon By Freepik">
                             <img src="./img/beer-mug-ByFreepik.png" class="figure-img img-fluid rounded" alt="Beer Icon By Freepik">
                         </div>
                     </figure>
 
-                    <figure class="figure promocion">
+                    <figure class="figure promocion d-flex flex-column rounded-5 align-center">
                         <strong>Tabla de Queso y Fiambres + 1 Porron Quilmes</strong>
-                        <div class="promocion__food container">
+                        <div class="promocion__food d-flex flex-row flex-wrap justify-content-evenly container">
                             <img src="./img/cheese-ByFreepik.png" class="figure-img img-fluid rounded" alt="Cheese Icon By Freepik">
                             <img src="./img/carne-ByFreepik.png" class="figure-img img-fluid rounded" alt="Jamón Icon By Freepik">
                             <img src="./img/aceituna-ByLiaRey.png" class="figure-img img-fluid rounded" alt="Aceituna Icon By LiaRey">
@@ -132,9 +133,9 @@
                         </div>
                     </figure>
 
-                    <figure class="figure promocion">
+                    <figure class="figure promocion d-flex flex-column rounded-5 align-center">
                         <strong>Tabla Caliente + 1 Porron Quilmes</strong>
-                        <div class="promocion__food container">
+                        <div class="promocion__food d-flex flex-row flex-wrap justify-content-evenly container">
                             <img src="./img/cheese-ByFreepik.png" class="figure-img img-fluid rounded" alt="Cheese Icon By Freepik">
                             <img src="./img/onion-rings-ByMihimihi.png" class="figure-img img-fluid rounded" alt="Onion Rings Icon By Mihimihi">
                             <img src="./img/sausages-ByFreepik.png" class="figure-img img-fluid rounded" alt="Sausages Icon By Freepik">
@@ -142,9 +143,9 @@
                         </div>
                     </figure>
 
-                    <figure class="figure promocion">
+                    <figure class="figure promocion d-flex flex-column rounded-5 align-center">
                         <strong>Rabas + Papas Ristretto + 1 Porron Quilmes</strong>
-                        <div class="promocion__food container">
+                        <div class="promocion__food d-flex flex-row flex-wrap justify-content-evenly container">
                             <img src="./img/onion-rings-ByMihimihi.png" class="figure-img img-fluid rounded" alt="Onion Rings Icon By Mihimihi">
                             <img src="./img/fried-potatoes-ByFreepik.png" class="figure-img img-fluid rounded" alt="Fried Potatos Icon By Freepik">
                             <img src="./img/beer-mug-ByFreepik.png" class="figure-img img-fluid rounded" alt="Beer Icon By Freepik">
@@ -153,6 +154,12 @@
 
                 </div>
             </div>
+        </div>
+
+        <div class="downloadMenuBtnDiv d-flex flex-row justify-content-center">
+            <a class="btn_descarga fw-bold d-flex flex-row justify-content-center rounded-5" href="./MENé RISTRETTO.pdf" download="MenúRisttretoPrueba.pdf">
+                Descargar menú completo
+            </a>
         </div>
 
         <div class="gallery container_fluid">
@@ -178,23 +185,18 @@
             </div>
         </div>
 
-        <div class="downloadMenuBtnDiv">
-            <a class="btn_descarga" href="./MENé RISTRETTO.pdf" download="MenúRisttretoPrueba.pdf">
-                Descargar menú completo
-            </a>
-        </div>
     </div>
     
-    <footer>
+    <footer class="d-flex flex-column justify-content-center align-items-center fw-bold">
         <strong>Seguinos en nuestras redes sociales</strong>
-        <ul>
+        <ul class="list-group list-group-horizontal justify-content-center">
             <li class="btn_social">
-                <a href="https://www.facebook.com/RistrettoResto" aria-label="Perfil de Facebook de Ristretto" target="_blank">
+                <a class ="text-decoration-none a-font-color" href="https://www.facebook.com/RistrettoResto" aria-label="Perfil de Facebook de Ristretto" target="_blank">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
             </li>
             <li class="btn_social">
-                <a href="https://www.instagram.com/ristrettocafebsas/?hl=es" aria-label="Perfil de Instagram de Ristretto" target="_blank">
+                <a class ="text-decoration-none a-font-color" href="https://www.instagram.com/ristrettocafebsas/?hl=es" aria-label="Perfil de Instagram de Ristretto" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </li>
@@ -208,12 +210,11 @@
                 <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
             </g-emoji>
              by 
-            <a href="https://www.linkedin.com/in/santiago-nahuel-ruiz-sugliani-a2bb441b8/" target="_blank">
+            <a class ="text-decoration-none a-font-color" href="https://www.linkedin.com/in/santiago-nahuel-ruiz-sugliani-a2bb441b8/" target="_blank">
                     Santiago Nahuel Ruiz Sugliani
             </a>
         </p>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>

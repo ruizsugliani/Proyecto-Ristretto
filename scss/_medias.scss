@@ -2,11 +2,11 @@
 @media(max-width: 576px) {
     .presentationDiv {
         strong {
-            font-size: 1rem;
+            font-size: 16px;
         }
 
         p {
-            font-size: .5rem;
+            font-size: 8px;
         }
     }
 }
@@ -14,11 +14,11 @@
 @media(max-width: 768px) {
     .presentationDiv {
         strong {
-            font-size: 2rem;
+            font-size: 32px;
         }
 
         p {
-            font-size: 1rem;
+            font-size: 16px;
         }
     }
 }
@@ -26,11 +26,11 @@
 @media(max-width: 992px) {
     .presentationDiv {
         strong {
-            font-size: 2.5em;
+            font-size: 48px;
         }
 
         p {
-            font-size: .2em;
+            font-size: 32px;
         }
     }
 }

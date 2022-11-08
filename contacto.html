@@ -18,10 +18,10 @@
 </head>
 <body>
 
-    <header>
-        <img class="header__logo animate__animated animate__fadeIn" src="img/Logo.png" alt="Logo Ristretto">
-        <h1 class="header__h1 animate__animated animate__fadeIn">Ristretto Café Resto</h1>
-        <img class="header__logo animate__animated animate__fadeIn" src="img/Logo.png" alt="Logo Ristretto">
+    <header class="d-flex flex-nowrap flex-row align-items-center justify-content-center">
+        <img class="header__logo animate__animated animate__fadeIn" src="./img/Logo.png" alt="Logo Ristretto">
+        <h1 class="header__h1 animate__animated animate__fadeIn fw-bold">Ristretto Café Resto</h1>
+        <img class="header__logo animate__animated animate__fadeIn" src="./img/Logo.png" alt="Logo Ristretto">
     </header>
 
     <nav class="navbar navbar-expand-lg sticky-top">
@@ -32,31 +32,31 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__menu mx-auto">
                     <li class="btn animate__animated animate__fadeIn nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">
+                        <a class="nav-link rounded fw-bold text-decoration-none a-font-color" aria-current="page" href="./index.html">
                             <i class="fa-solid fa-house"></i>
                             Home
                         </a>
                     </li>
                     <li class="btn animate__animated animate__fadeIn nav-item">
-                        <a class="nav-link" href="./nosotros.html">
+                        <a class="nav-link rounded fw-bold text-decoration-none a-font-color" href="./nosotros.html">
                             <i class="fa-solid fa-user"></i>
                             Nosotros
                         </a>
                     </li>
                     <li class="btn animate__animated animate__fadeIn nav-item">
-                        <a class="nav-link" href="./local.html">
+                        <a class="nav-link rounded fw-bold text-decoration-none a-font-color" href="./local.html">
                             <i class="fa-solid fa-shop"></i>
                             Local
                         </a>
                     </li>
                     <li class="btn animate__animated animate__fadeIn nav-item">
-                        <a class="nav-link" href="./menu.html">
+                        <a class="nav-link rounded fw-bold text-decoration-none a-font-color" href="./menu.html">
                             <i class="fa-solid fa-mug-hot"></i>
                             Menú
                         </a>
                     </li>
                     <li class="btn animate__animated animate__fadeIn nav-item">
-                        <a class="nav-link active" href="./contacto.html">
+                        <a class="nav-link active rounded fw-bold text-decoration-none a-font-color" href="./contacto.html">
                             <i class="fa-solid fa-paper-plane"></i>
                             Contacto
                         </a>
@@ -66,17 +66,17 @@
         </div>
     </nav>
 
-    <div class="contactMainDiv"> 
+    <div class="contactMainDiv d-flex flex-column"> 
         <form action="">
             <div class="col">
-                <label for="Nombre">Nombre y apellido</label>
+                <label class="fw-bold" for="Nombre">Nombre y apellido</label>
                 <input type="text" name="Nombre" id="Nombre" class="form-control">
         
-                <label for="E-Mail">Correo electrónico</label>
+                <label class="fw-bold" for="E-Mail">Correo electrónico</label>
                 <input type="email" name="E-Mail" id="E-Mail" class="form-control">
                 
                 <div class="messageSection">
-                    <label for="Mensaje">Tu mensaje</label>
+                    <label class="fw-bold" for="Mensaje">Tu mensaje</label>
                     <textarea name="Mensaje" name="Mensaje" id="Mensaje" cols="30" rows="10" class="form-control"></textarea>
                     <input type="submit" value="Enviar" class="form-control sendBtn">
                 </div>
@@ -84,16 +84,16 @@
         </form>
     </div>
 
-    <footer>
+    <footer class="d-flex flex-column justify-content-center align-items-center fw-bold">
         <strong>Seguinos en nuestras redes sociales</strong>
-        <ul>
+        <ul class="list-group list-group-horizontal justify-content-center">
             <li class="btn_social">
-                <a href="https://www.facebook.com/RistrettoResto" aria-label="Perfil de Facebook de Ristretto" target="_blank">
+                <a class ="text-decoration-none a-font-color" href="https://www.facebook.com/RistrettoResto" aria-label="Perfil de Facebook de Ristretto" target="_blank">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
             </li>
             <li class="btn_social">
-                <a href="https://www.instagram.com/ristrettocafebsas/?hl=es" aria-label="Perfil de Instagram de Ristretto" target="_blank">
+                <a class ="text-decoration-none a-font-color" href="https://www.instagram.com/ristrettocafebsas/?hl=es" aria-label="Perfil de Instagram de Ristretto" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </li>
@@ -107,7 +107,7 @@
                 <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
             </g-emoji>
              by 
-            <a href="https://www.linkedin.com/in/santiago-nahuel-ruiz-sugliani-a2bb441b8/" target="_blank">
+            <a class ="text-decoration-none a-font-color" href="https://www.linkedin.com/in/santiago-nahuel-ruiz-sugliani-a2bb441b8/" target="_blank">
                     Santiago Nahuel Ruiz Sugliani
             </a>
         </p>

@@ -1,0 +1,19 @@
+nav {
+    background-color: var(--second_color);
+    position: sticky;
+
+    .navbar-nav {
+        .nav-link.active {
+            border: 1px solid var(--fourth_color);
+            color: var(--fourth_color);
+        }
+
+        .nav-link:hover {
+            background-color: var(--third_color);
+        }
+    }
+    
+    .btn {
+        font-size: 2em;
+    }
+}
