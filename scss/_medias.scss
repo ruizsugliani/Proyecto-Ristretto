@@ -1,80 +1,73 @@
 /* MEDIAS HOME PAGE */
-@media(max-width: 576px) {
+.homeMainDiv {
     .presentationDiv {
-        strong {
-            font-size: 16px;
+        @media(max-width: 992px) {
+            strong {
+                font-size: 48px;
+            }
+    
+            p {
+                font-size: 32px;
+            }
+        }
+        
+        @media(max-width: 768px) {
+
+            strong {
+                font-size: 36px;
+            }
+        
+            p {
+                font-size: 24px;
+            }
         }
 
-        p {
-            font-size: 8px;
+        @media(max-width: 576px) {
+            strong {
+                font-size: 36px;
+            }
+    
+            p {
+                font-size: 20px;
+
+            }
         }
     }
 }
 
-@media(max-width: 768px) {
-    .presentationDiv {
-        strong {
-            font-size: 32px;
-        }
-
-        p {
-            font-size: 16px;
-        }
-    }
-}
-
-@media(max-width: 992px) {
-    .presentationDiv {
-        strong {
-            font-size: 48px;
-        }
-
-        p {
-            font-size: 32px;
-        }
-    }
-}
 
 /* MEDIAS NOSOTROS PAGE */
-@media (max-width:576px) {
-    .nosotrosMainDiv {
-        font-size: 0.5em;
-
-        .opinionsDiv {
-            font-size: 2em;
+.nosotrosMainDiv {
+    .opinionsDiv {
+        @media(max-width: 992px) {
+            strong {
+                font-size: 48px;
+            }
+    
+            p {
+                font-size: 32px;
+            }
         }
-    }
-}
-
-@media (max-width:768px) {
-    .nosotrosMainDiv {
-        font-size: 0.5em;
-
-        .opinionsDiv {
-            font-size: 2em;
-        }
-    }
-}
-
-/* MEDIAS LOCAL PAGE */
-
-/* MEDIAS MENU PAGE */
-@media (max-width: 1300px) {
-    .menuMainDiv {
-        .promociones {
-            @include set-display-flex(column);
+        
+        @media(max-width: 768px) {
+            strong {
+                font-size: 36px;
+            }
+        
+            p {
+                font-size: 24px;
+            }
         }
 
-        img {
-            width: 289.5px;
-            height: 289.5px;
-        }
-    }
-}
+        @media(max-width: 576px) {
+            strong {
+                font-size: 36px;
+            }
+    
+            p {
+                font-size: 20px;
 
-/* MEDIAS CONTACTO PAGE */
-@media (max-width: 820px) {
-    .contactMainDiv {
-        padding: 0em 1em 1em 1em;
+            }
+        }
     }
 }
